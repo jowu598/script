@@ -1,0 +1,13 @@
+# delete line with test
+sed '/test' d example
+# change test - > mytest
+sed 's/test/mytest/g' example
+# test -> test_suffix
+sed 's/test/&suffix/g' example
+
+#love被标记为1，所有loveable会被替换成lovers，而且替换的行会被打印出来。
+sed 's/\(love)able/\1es/p' 
+
+
+# write the line contain test into file
+sed -n '/test/w file' example

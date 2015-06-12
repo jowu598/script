@@ -1,0 +1,12 @@
+ 1869  grep -n 'the' txt
+ 1870  grep -in 'the' txt
+ 1871  grep -n 't[ae]st' txt
+ 1872  grep -n '[0-9]' txt
+ 1873  grep -n '[\d]' txt
+ 1874  grep -n '&the' txt
+ 1875  grep -n '^the' txt
+ 1876  grep -n "o{2\}" txt
+ 1877  grep -n 'o{2\}' txt
+ 1878  grep -n '\o{2\}' txt
+ 1879  grep -n 'o{2\}' txt
+ 1880  grep -n 'o\{2\}'  txt 
