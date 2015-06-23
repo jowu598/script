@@ -34,7 +34,8 @@ if __name__ == '__main__':
 	if (len(sys.argv) != 2):
 		print("error input")
 		exit(1)
-	newStr = readFile('/home/yj/workspace/script/python/swapContent.txt')
+	path = os.getcwd() + '/swapContent.txt'
+	newStr = readFile(path)
 	changeDiscription(sys.argv[1], newStr)
 	print("done")
 
