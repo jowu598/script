@@ -1,0 +1,29 @@
+<error>
+  <unique>0x99c</unique>
+  <tid>8</tid>
+  <kind>Race</kind>
+  <xwhat>
+    <text>Possible data race during read of size 4 at 0x555556C by thread #8</text>
+    <hthreadid>8</hthreadid>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4F52BEE</ip>
+      <obj>/lib/libncmq.so</obj>
+      <fn>nutshell::NCMQOwn::incSeqnum()</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x555556C is 404 bytes inside a block of size 904 alloc'd</auxwhat>
+  <stack>
+    <frame>
+      <ip>0x4834348</ip>
+      <obj>/system/usr/lib/valgrind/vgpreload_helgrind-arm-linux.so</obj>
+      <fn>operator new(unsigned int, std::nothrow_t const&amp;)</fn>
+    </frame>
+    <frame>
+      <ip>0x4F563B7</ip>
+      <obj>/lib/libncmq.so</obj>
+      <fn>nutshell::NCMQSocket::create(int, nutshell::NCMQContext*, unsigned int, int)</fn>
+    </frame>
+  </stack>
+</error>

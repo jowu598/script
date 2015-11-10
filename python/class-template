@@ -1,0 +1,8 @@
+
+class Jowu
+{
+	Jowu();
+	virtual ~jowu();
+
+	void speak();
+}; 
