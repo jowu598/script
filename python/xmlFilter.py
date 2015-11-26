@@ -81,7 +81,7 @@ def xmlFilter(filename, flitername):
 	f.close() 
 
 if __name__ == '__main__':
-    xmlFilter("error.xml","filter.xml");
+    xmlFilter("xx.xml","filter.xml");
 
 
 # <error>
