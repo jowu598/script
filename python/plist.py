@@ -12,6 +12,9 @@ plist = {'aKey':'aValue',
          }
 try:
     writePlist(plist, "example.plist")
+    out = readPlist("example.plist")
+    print(out)
 except (InvalidPlistException, NotBinaryPlistException), e:
     print "Something bad happened:", e
+
 

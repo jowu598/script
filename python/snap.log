@@ -1,341 +1,14 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[   79.902086] platform_load_finish
-
-[1] 3101
-root@nutshell:/ # I/start   (  137): [TC:70227][TT:47] [nhsysctrl] Awake start, collected linux crash dump, awake database, set bootmode/bootsubmode to sysinfo firs
-I/start   (  137): [TC:70231][TT:51] [nhsysctrl] intracall to uCom to do connection with micon first
-I/start   (  137): [TC:70238][TT:55] [nhsysctrl] database awake start
-I/start   (  147): [TC:70241][TT:503] [OpeningService] 70241 : correct time
-I/start   (  147): [TC:70241][TT:503] [OpeningService] opening onAwake
-I/start   (  147): [TC:70241][TT:503] [OpeningService] plcaution do not start : sys.nutshell.plcaution
-I/start   (  138): [TC:70237][TT:6] [NHuCom] recevie awake command from SysCtrl, open device, send connect command to micon
-I/start   (  147): [TC:70242][TT:504] [OpeningService] 70242 : isStartOpening time
-I/start   (  147): [TC:70242][TT:292] [OpeningService] 70242 : correct time
-I/start   (  147): [TC:70242][TT:292] [OpeningService] OpeningThreadJobMoviePlayer Start
-I/start   (  147): [TC:70242][TT:292] [OpeningService] 70242 : correct time
-I/start   (  147): [TC:70242][TT:292] [OpeningPlayer] Prepare Enter
-I/start   (  137): [TC:70416][TT:55] [nhsysctrl] database awake end
-I/start   (  137): [TC:70424][TT:59] [nhsysctrl] at the same time, set propety to notify init to do mount
-I/start   (  138): [TC:70439][TT:8] [NHuCom] receive initial value
-I/start   (  138): [TC:70795][TT:13] [NHuCom] send coorperation opening command for B OFF startup
-I/start   (  147): [TC:71095][TT:299] [OpeningPlayer] Prepare finished
-I/start   (  147): [TC:71095][TT:299] [OpeningPlayer] First Frame Appeared
-I/start   (  147): [TC:71095][TT:299] [OpeningService] 71095 : correct time
-I/start   (  137): [TC:71469][TT:70] [nhsysctrl] notify awake event to system server, ucom communication OK
-I/start   (  146): [TC:71475][TT:7] [ServiceManager] scheduleAwake
-I/start   (  137): [TC:71473][TT:72] [nhsysctrl] bootmode is normal && bootSubMode is snapshot start, notify HAL awake
-I/start   (  138): [TC:71531][TT:2] [NHAvcH] start onAwake
-I/start   (  138): [TC:71531][TT:2] [NHAvcH] start check Model Info
-I/start   (  138): [TC:71531][TT:2] [NHAvcH] end check Model Info
-I/start   (  138): [TC:71550][TT:2] [NHAvcH] start loadFromBackup
-I/start   (  138): [TC:71578][TT:3] [NHAvcH] end loadFromBackup
-I/start   (  138): [TC:71578][TT:3] [NHAvcH] DCU run individually!!
-I/start   (  146): [TC:71580][TT:176] [ServiceManager] askStartService [nutshell.common.system:2]
-I/start   (  146): [TC:71580][TT:177] [ServiceManager] askStartService [nutshell.appmanager:2]
-I/start   (  146): [TC:71580][TT:177] [ServiceManager] askStartService [nutshell.appframework.packagemanager:2]
-I/start   (  146): [TC:71580][TT:177] [ServiceManager] askStartService [nutshell.common.system:2]
-I/start   (  146): [TC:71580][TT:177] [ServiceManager] askStartService [nutshell.policymanager:2]
-I/start   (  146): [TC:71581][TT:177] [ServiceManager] askStartService [nutshell.windowmanager:2]
-I/start   (  146): [TC:71581][TT:177] [ServiceManager] askStartService [nutshell.media.audioservice:2]
-I/start   (  146): [TC:71581][TT:177] [ServiceManager] askStartService [nutshell.media.mediaplayer:2]
-I/start   (  146): [TC:71581][TT:177] [ServiceManager] askStartService [nutshell.vehicleinfo:2]
-I/start   (  146): [TC:71581][TT:177] [ServiceManager] askStartService [nutshell.providermanager:2]
-I/start   (  146): [TC:71581][TT:177] [ServiceManager] askStartService [nutshell.common.connect:2]
-I/start   (  146): [TC:71581][TT:177] [ServiceManager] askStartService [nutshell.common.networkmanager:2]
-I/start   (  146): [TC:71581][TT:178] [ServiceManager] askStartService [nutshell.media.infoprovider:2]
-I/start   (  146): [TC:71581][TT:178] [ServiceManager] askStartService [nutshell.media.provider:2]
-I/start   (  146): [TC:71581][TT:178] [ServiceManager] askStartService [nutshell.common.storagescanner:2]
-I/start   (  146): [TC:71581][TT:178] [ServiceManager] askStartService [nutshell.camera.camera:2]
-I/start   (  146): [TC:71581][TT:178] [ServiceManager] askStartService [nutshell.media.beepservice:2]
-I/start   (  148): [TC:71583][TT:87] [Service] Before onAwake [nutshell.appframework.packagemanager]
-I/start   (  148): [TC:71583][TT:87] [PackageManager] onAwake
-I/start   (  149): [TC:71584][TT:80] [Service] Before onAwake [nutshell.appmanager]
-I/start   (  149): [TC:71584][TT:80] [AppManager] onAwake start
-I/start   (  149): [TC:71584][TT:80] [AppManager] awake set AppServer in awake status.
-I/start   (  149): [TC:71584][TT:80] [AppManager] awake start SystemUI task
-I/start   (  149): [TC:71584][TT:80] [AppManager] awake start SystemUI task successful.
-I/start   (  149): [TC:71584][TT:80] [AppManager] onAwake end
-I/start   (  149): [TC:71584][TT:80] [Service] After onAwake [nutshell.appmanager]
-I/start   (  149): [TC:71584][TT:59] [AppManager] waitBootComplete begin
-I/start   (  148): [TC:71584][TT:88] [PackageManager] onAwakeOK
-I/start   (  148): [TC:71584][TT:88] [Service] After onAwake [nutshell.appframework.packagemanager]
-I/start   (  161): [TC:71586][TT:273] [Service] Before onAwake [nutshell.media.audioservice]
-I/start   (  160): [TC:71586][TT:365] [Service] Before onAwake [nutshell.media.infoprovider]
-I/start   (  160): [TC:71586][TT:365] [Service] After onAwake [nutshell.media.infoprovider]
-I/start   (  161): [TC:71586][TT:273] [Service] After onAwake [nutshell.media.audioservice]
-I/start   (  158): [TC:71586][TT:83] [Service] Before onAwake [nutshell.vehicleinfo]
-I/start   (  158): [TC:71587][TT:84] [Service] After onAwake [nutshell.vehicleinfo]
-I/start   (  149): [TC:71598][TT:80] [Service] notify status ready [nutshell.appmanager]
-I/start   (  158): [TC:71603][TT:84] [Service] notify status ready [nutshell.vehicleinfo]
-I/start   (  148): [TC:71604][TT:89] [Service] notify status ready [nutshell.appframework.packagemanager]
-I/start   (  160): [TC:71606][TT:366] [Service] notify status ready [nutshell.media.infoprovider]
-I/start   (  161): [TC:71606][TT:274] [Service] notify status ready [nutshell.media.audioservice]
-I/start   (  150): [TC:71622][TT:504] [Service] Before onAwake [nutshell.common.system]
-I/start   (  150): [TC:71622][TT:504] [SystemService] onAwake
-I/start   (  146): [TC:71628][TT:15] [ServiceManager] ServiceStatusChanged [nutshell.appmanager:3]
-I/start   (  146): [TC:71629][TT:15] [ServiceManager] ServiceStatusChanged [nutshell.vehicleinfo:3]
-I/start   (  138): [TC:71629][TT:3] [NHAvcH] end onAwake
-I/start   (  146): [TC:71635][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.appframework.packagemanager:3]
-I/start   (  146): [TC:71636][TT:15] [ServiceManager] ServiceStatusChanged [nutshell.media.infoprovider:3]
-I/start   (  160): [TC:71636][TT:367] [Service] Before onAwake [nutshell.media.provider]
-I/start   (  160): [TC:71636][TT:367] [Service] After onAwake [nutshell.media.provider]
-I/start   (  147): [TC:71646][TT:299] [OpeningService] OpeningMoviePlayer::play start
-I/start   (  147): [TC:71646][TT:299] [OpeningService] OK : iauto.opening.movie.prepare
-I/start   (  147): [TC:71652][TT:302] [OpeningPlayer] now playing
-I/start   (  147): [TC:71652][TT:302] [OpeningService] 3404 : correct time
-I/start   (  147): [TC:71652][TT:302] [OpeningService] OpeningThreadJobMoviePlayer End
-I/start   (  150): [TC:71653][TT:505] [PowerManager] get boot submode ok.
-I/start   (  150): [TC:71654][TT:506] [PowerManager] get startup type ok.
-I/start   (  150): [TC:71656][TT:506] [PowerManager] start Awake.
-I/start   (  146): [TC:71661][TT:15] [ServiceManager] ServiceStatusChanged [nutshell.media.audioservice:3]
-I/start   (  161): [TC:71661][TT:275] [Service] Before onAwake [nutshell.media.mediaplayer]
-I/start   (  161): [TC:71661][TT:275] [Service] After onAwake [nutshell.media.mediaplayer]
-I/start   (  160): [TC:71663][TT:367] [Service] notify status ready [nutshell.media.provider]
-I/start   (  161): [TC:71666][TT:275] [Service] notify status ready [nutshell.media.mediaplayer]
-I/start   (  146): [TC:71666][TT:15] [ServiceManager] ServiceStatusChanged [nutshell.media.provider:3]
-I/start   (  160): [TC:71667][TT:368] [Service] Before onAwake [nutshell.common.storagescanner]
-I/start   (  160): [TC:71671][TT:369] [Service] After onAwake [nutshell.common.storagescanner]
-I/start   (  146): [TC:71672][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.media.mediaplayer:3]
-I/start   (  161): [TC:71672][TT:276] [Service] Before onAwake [nutshell.camera.camera]
-I/start   (  161): [TC:71672][TT:276] [NCCameraService] NCCameraService::onAwake start
-I/start   (  160): [TC:71674][TT:370] [Service] notify status ready [nutshell.common.storagescanner]
-I/start   (  150): [TC:71676][TT:506] [SystemService] awaken power manager
-I/start   (  150): [TC:71676][TT:37] [PowerManager] Start Awake.
-I/start   (  150): [TC:71678][TT:508] [SystemService] awaken storage manager
-I/start   (  150): [TC:71678][TT:508] [SystemService] UserManager start.
-I/start   (  150): [TC:71679][TT:509] [SystemService] UserManager read BootParameter start.
-I/start   (  146): [TC:71682][TT:15] [ServiceManager] ServiceStatusChanged [nutshell.common.storagescanner:3]
-I/start   (  150): [TC:71685][TT:509] [SystemService] UserManager read BootParameter end.
-I/start   (  150): [TC:71687][TT:509] [SystemService] UserManager check current User.
-I/start   (  150): [TC:71689][TT:511] [SystemService] UserManager check User link.
-I/start   (  150): [TC:71692][TT:513] [SystemService] UserManager check User link OK.
-I/start   (  150): [TC:71694][TT:514] [SystemService] UserManager check current User finished.
-I/start   (  150): [TC:71694][TT:514] [SystemService] UserManager notifyUserLogin start.
-I/start   (  150): [TC:71733][TT:515] [SystemService] start SettingService after User login.
-I/start   (  161): [TC:71742][TT:283] [NCCameraService] NCCameraService::onAwake end
-I/start   (  161): [TC:71743][TT:283] [Service] After onAwake [nutshell.camera.camera]
-I/start   (  146): [TC:71743][TT:181] [ServiceManager] askStartService [nutshell.common.setting:2]
-I/start   (  150): [TC:71745][TT:517] [SystemService] UserManager start OK.
-I/start   (  150): [TC:71745][TT:517] [SystemService] awaken user manager
-I/start   (  161): [TC:71745][TT:283] [Service] notify status ready [nutshell.camera.camera]
-I/start   (  150): [TC:71746][TT:517] [SystemService] awaken rstorage manager
-I/start   (  146): [TC:71748][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.camera.camera:3]
-I/start   (  161): [TC:71749][TT:284] [Service] Before onAwake [nutshell.media.beepservice]
-I/start   (  161): [TC:71749][TT:284] [Service] After onAwake [nutshell.media.beepservice]
-I/start   (  150): [TC:71746][TT:517] [SystemService] update tcoffset property[fffef568]-[-68248]
-I/start   (  150): [TC:71752][TT:519] [SystemService] awaken env manager
-I/start   (  161): [TC:71753][TT:285] [Service] notify status ready [nutshell.media.beepservice]
-I/start   (  146): [TC:71754][TT:15] [ServiceManager] ServiceStatusChanged [nutshell.media.beepservice:3]
-I/start   (  150): [TC:72108][TT:0] [SystemService] update property by environment.ini start.
-I/start   (  150): [TC:72121][TT:522] [SystemService] register eventhandler filter
-I/start   (  150): [TC:72121][TT:522] [SystemService] onAwakeOK
-I/start   (  150): [TC:72121][TT:522] [Service] After onAwake [nutshell.common.system]
-I/start   (  150): [TC:72121][TT:522] [Service] notify status ready [nutshell.common.system]
-I/start   (  146): [TC:72134][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.common.system:3]
-I/start   (  150): [TC:72137][TT:523] [Service] Before onAwake [nutshell.policymanager]
-I/start   (  150): [TC:72137][TT:523] [Service] After onAwake [nutshell.policymanager]
-I/start   (  150): [TC:72138][TT:524] [Service] notify status ready [nutshell.policymanager]
-I/start   (  146): [TC:72154][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.policymanager:3]
-I/start   (  150): [TC:72154][TT:524] [Service] Before onAwake [nutshell.windowmanager]
-I/start   (  150): [TC:72161][TT:7] [SystemService] update property by environment.ini end.
-I/start   (  150): [TC:72161][TT:7] [SystemService] update property device.xm by hal opt [0]
-I/start   (  150): [TC:72162][TT:8] [SystemService] update property soft.hddata by hal opt [0]
-I/start   (  150): [TC:72162][TT:8] [SystemService] update property soft.tsl by hal opt [0]
-I/start   (  150): [TC:72174][TT:524] [Service] After onAwake [nutshell.windowmanager]
-I/start   (  150): [TC:72174][TT:525] [Service] notify status ready [nutshell.windowmanager]
-I/start   (  150): [TC:72140][TT:0] [SystemService] recover or clear backupmemory from files - begin
-I/start   (  146): [TC:72179][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.windowmanager:3]
-I/start   (  150): [TC:72180][TT:525] [Service] Before onAwake [nutshell.providermanager]
-I/start   (  150): [TC:72180][TT:525] [Service] After onAwake [nutshell.providermanager]
-I/start   (  150): [TC:72180][TT:526] [Service] notify status ready [nutshell.providermanager]
-I/start   (  146): [TC:72181][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.providermanager:3]
-I/start   (  150): [TC:72182][TT:526] [Service] Before onAwake [nutshell.common.connect]
-I/start   (  150): [TC:72182][TT:527] [Service] After onAwake [nutshell.common.connect]
-I/start   (  150): [TC:72244][TT:528] [Service] notify status ready [nutshell.common.connect]
-I/start   (  146): [TC:72245][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.common.connect:3]
-I/start   (  150): [TC:72246][TT:528] [Service] Before onAwake [nutshell.common.networkmanager]
-I/start   (  150): [TC:72247][TT:530] [Service] After onAwake [nutshell.common.networkmanager]
-I/start   (  150): [TC:72250][TT:6] [SystemService] recover or clear backupmemory from files - end
-I/start   (  137): [TC:72509][TT:83] [nhsysctrl] onNotifyAck(NHNT_NOTIFYID_PM_AWAKE), 0x10c15
-I/start   (  150): [TC:72521][TT:533] [Service] notify status ready [nutshell.common.networkmanager]
-I/start   (  150): [TC:72522][TT:35] [SystemService] EnvManager update over.
-I/start   (  146): [TC:72524][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.common.networkmanager:3]
-I/start   (  150): [TC:72697][TT:537] [Service] Before onAwake [nutshell.common.setting]
-I/start   (  150): [TC:72697][TT:537] [SettingService] onAwake
-I/start   (  150): [TC:72699][TT:539] [SettingService] provider check product country
-I/start   (  150): [TC:72699][TT:539] [SettingService] provider find extra plist
-I/start   (  150): [TC:72699][TT:539] [SettingService] provider check apl version
-I/start   (  150): [TC:72699][TT:539] [SettingService] provider open database
-I/start   (  150): [TC:72719][TT:542] [SettingService] provider database create table
-I/start   (  150): [TC:72737][TT:544] [SettingService] provider check boot mode
-I/start   (  150): [TC:72739][TT:545] [SettingService] provider open bonclear database
-I/start   (  150): [TC:72773][TT:547] [SettingService] provider bonclear database create table
-I/start   (  150): [TC:73959][TT:823] [SettingService] all table done
-I/start   (  150): [TC:73959][TT:823] [SettingService] provider prepare finish
-I/start   (  150): [TC:73959][TT:823] [SettingService] onAwake provider prepare finish
-I/start   (  150): [TC:73959][TT:823] [SettingService] plugin setCallback
-I/start   (  150): [TC:73964][TT:827] [SettingService] plugin setCallback
-I/start   (  150): [TC:73964][TT:827] [SettingService] plugin setCallback
-I/start   (  150): [TC:73964][TT:827] [SettingService] plugin onAwake
-I/start   (  150): [TC:73964][TT:827] [SettingService] plugin onAwake
-I/start   (  150): [TC:73970][TT:827] [SettingService] plugin onAwake
-I/start   (  150): [TC:74059][TT:844] [SettingService] onAwake setting stub awaken
-I/start   (  150): [TC:74059][TT:845] [SettingService] onAwake settingmenu stub awaken
-I/start   (  150): [TC:74076][TT:845] [PowerManager] Setting service ready.
-I/start   (  150): [TC:74118][TT:847] [PowerManager] Start MediaManager.
-I/start   (  146): [TC:74126][TT:187] [ServiceManager] askStartService [nutshell.media.mediamanager:2]
-I/start   (  163): [TC:74128][TT:144] [Service] Before onAwake [nutshell.media.mediamanager]
-I/start   (  150): [TC:74127][TT:849] [PowerManager] Start FCService.
-I/start   (  146): [TC:74141][TT:187] [ServiceManager] askStartService [nutshell.systemui.fcservice:2]
-I/start   (  225): [TC:74143][TT:592] [Service] Before onAwake [nutshell.systemui.fcservice]
-I/start   (  225): [TC:74143][TT:592] [fcservice] [onAwake] 
-I/start   (  225): [TC:74143][TT:592] [fcservice] [onAwake] after constructor
-I/start   (  225): [TC:74143][TT:592] [AppControl] Appcontroller onAwake start
-I/start   (  225): [TC:74143][TT:592] [AppControl] Appcontroller onAwake start updateProductCity
-I/start   (  225): [TC:74143][TT:592] [AppControl] getProduct prodcut : [China]
-I/start   (  225): [TC:74143][TT:592] [AppControl] Appcontroller onAwake start updateDCUVRInfo
-I/start   (  225): [TC:74144][TT:592] [AppControl] Appcontroller onAwake start getBoardType
-I/start   (  225): [TC:74144][TT:592] [AppControl] Appcontroller onAwake start syncData
-I/start   (  225): [TC:74144][TT:592] [AppControl] [syncData] begin
-I/start   (  150): [TC:74148][TT:850] [Service] After onAwake [nutshell.common.setting]
-I/start   (  150): [TC:74152][TT:851] [Service] notify status ready [nutshell.common.setting]
-I/start   (  150): [TC:74156][TT:33] [PowerManager] Media services ready.
-I/start   (  150): [TC:74159][TT:38] [PowerManager] Notify HAL Awoken.
-I/start   (  146): [TC:74161][TT:16] [ServiceManager] ServiceStatusChanged [nutshell.common.setting:3]
-I/start   (  137): [TC:74164][TT:3] [nhsysctrl] notifyPowerProcess(awake end, process:11) status:0x10e15
-I/start   (  138): [TC:74167][TT:20] [NHuCom] send version info/ecode/product info request when send apl enable
-I/start   (  150): [TC:74170][TT:40] [SystemService] notifyBootCompleted
-I/start   (  150): [TC:74170][TT:40] [PowerManager] Start other preload services.
-I/start   (  149): [TC:74267][TT:79] [AppManager] waitBootComplete OK
-I/start   (  149): [TC:74267][TT:79] [AppManager] waitBootComplete set AppServer in Running status.
-I/start   (  149): [TC:74267][TT:79] [AppManager] waitBootComplete end
-I/start   (  149): [TC:74268][TT:74] [AppManager]   handle request startApplication, appid net.suntec.app.TDSystemUI.application
-I/start   (  149): [TC:74268][TT:74] [AppManager]  send req InitUI Awake, appid net.suntec.app.TDSystemUI.application
-I/start   (  146): [TC:74273][TT:188] [ServiceManager] askStartService [nutshell.media.mediamanager:2]
-I/start   (  146): [TC:74274][TT:188] [ServiceManager] askStartService [nutshell.iovmanager:2]
-I/start   (  146): [TC:74274][TT:188] [ServiceManager] askStartService [nutshell.media.iapservice:2]
-I/start   (  146): [TC:74274][TT:188] [ServiceManager] askStartService [nutshell.diag.sysdiag:2]
-I/start   (  146): [TC:74274][TT:188] [ServiceManager] askStartService [nutshell.commu.bluetooth:2]
-I/start   (  146): [TC:74274][TT:189] [ServiceManager] askStartService [nutshell.pmcs.pmcs:2]
-I/start   (  146): [TC:74274][TT:189] [ServiceManager] askStartService [nutshell.systemui.fcservice:2]
-I/start   (  146): [TC:74274][TT:189] [ServiceManager] askStartService [nutshell.ngserver.ngservice:2]
-I/start   (  146): [TC:74274][TT:189] [ServiceManager] askStartService [nutshell.ics.ics:2]
-I/start   (  146): [TC:74275][TT:189] [ServiceManager] askStartService [nutshell.ipa.ipa:2]
-I/start   (  146): [TC:74275][TT:189] [ServiceManager] askStartService [nutshell.media.a2dpservice:2]
-I/start   (  146): [TC:74275][TT:189] [ServiceManager] askStartService [nutshell.security.security:2]
-I/start   (  146): [TC:74275][TT:189] [ServiceManager] askStartService [nutshell.common.exthal:2]
-I/start   (  146): [TC:74275][TT:190] [ServiceManager] askStartService [nutshell.localproxy:0]
-I/start   (  159): [TC:74293][TT:110] [Service] Before onAwake [nutshell.iovmanager]
-I/start   (  159): [TC:74293][TT:110] [Service] After onAwake [nutshell.iovmanager]
-I/start   (  162): [TC:74296][TT:82] [Service] Before onAwake [nutshell.media.iapservice]
-I/start   (  157): [TC:74300][TT:58] [Service] Before onAwake [nutshell.common.exthal]
-I/start   (  157): [TC:74300][TT:58] [Service] After onAwake [nutshell.common.exthal]
-I/start   (  161): [TC:74302][TT:285] [Service] Before onAwake [nutshell.media.a2dpservice]
-I/start   (  206): [TC:74312][TT:164] [Service] Before onAwake [nutshell.diag.sysdiag]
-I/start   (  206): [TC:74313][TT:164] [NCDIAGService] NCDIAGService::onAwake Start
-I/start   (  157): [TC:74318][TT:59] [Service] notify status ready [nutshell.common.exthal]
-I/start   (  150): [TC:74321][TT:41] [PowerManager] Awake finished.
-I/start   (  150): [TC:74321][TT:41] [PowerManager] Start Updating.
-I/start   (  159): [TC:74362][TT:112] [Service] notify status ready [nutshell.iovmanager]
-I/start   (  146): [TC:74372][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.common.exthal:3]
-I/start   (  146): [TC:74374][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.iovmanager:3]
-I/start   (  207): [TC:74428][TT:122] [Service] Before onAwake [nutshell.pmcs.pmcs]
-I/start   (  161): [TC:74436][TT:290] [Service] After onAwake [nutshell.media.a2dpservice]
-I/start   (  206): [TC:74439][TT:169] [NCDIAGService] NCDIAGService::onAwake End
-I/start   (  206): [TC:74439][TT:169] [Service] After onAwake [nutshell.diag.sysdiag]
-I/start   (  207): [TC:74441][TT:123] [nutshell.pmcs.pmcs] onAwake, begin!
-I/start   (  207): [TC:74441][TT:123] [nutshell.pmcs.pmcs] onAwake, end!
-I/start   (  207): [TC:74441][TT:123] [Service] After onAwake [nutshell.pmcs.pmcs]
-I/start   (  161): [TC:74521][TT:291] [Service] notify status ready [nutshell.media.a2dpservice]
-I/start   (  146): [TC:74521][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.media.a2dpservice:3]
+                                                                                                                                                                                                             ?
+©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤jowu@jowu-pset:/drives/e/workspace/script/python$ cat snap.log  | grep 871 | grep -E '\[end|begin\]'
 I/start   (  871): [TC:74582][TT:9755] [AppLauncher] [AppContext::onUIAwake][begin] !!![net.suntec.app.TDSystemUI.application]
 I/start   (  871): [TC:74584][TT:9756] [AppLauncher] [AppContext::onUIAwake]][PrivateAPP::SyncThemeAndLanguage][begin] !!![net.suntec.app.TDSystem
 I/start   (  871): [TC:74585][TT:9758] [UIFrameworkBase] [NGStatusManager::syncThemeAndLanguage][begin]
-I/start   (  871): [TC:74586][TT:9758] [UIFrameworkBase] [NGStatusManager::syncThemeAndLanguage][NGIAppCtrlInterface::getCurrentLanguageAndTheme][
-I/start   (  871): [TC:74588][TT:9759] [UIFrameworkBase] [NGStatusManager::syncThemeAndLanguage][NGIAppCtrlInterface::getCurrentLanguageAndTheme][
 I/start   (  871): [TC:74594][TT:9764] [UIFrameworkBase] [NGStatusManager::syncThemeAndLanguage][language sync][begin]
-I/start   (  871): [TC:74594][TT:9764] [UIFrameworkBase] [NGResourceManager::setLanguage][begin] language = 
+I/start   (  871): [TC:74594][TT:9764] [UIFrameworkBase] [NGResourceManager::setLanguage][begin] language =
 I/start   (  871): [TC:74594][TT:9765] [UIFrameworkBase] [NGResourceManager::loadResAfterSnapshot][begin]
 I/start   (  871): [TC:74596][TT:9766] [UIFrameworkBase] [NGResourceManager::strReaderIdx][begin]
 I/start   (  871): [TC:74597][TT:9767] [UIFrameworkBase] [NGResourceManager::strReaderIdx][end]
 I/start   (  871): [TC:74598][TT:9768] [UIFrameworkBase] [NGResourceManager::strReaderIdx][begin]
-I/start   (  146): [TC:74601][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.localproxy:3]
-I/start   (  206): [TC:74633][TT:172] [Service] notify status ready [nutshell.diag.sysdiag]
-I/start   (  146): [TC:74693][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.diag.sysdiag:3]
-I/start   (  207): [TC:74705][TT:136] [Service] notify status ready [nutshell.pmcs.pmcs]
-I/start   (  206): [TC:74710][TT:7] [NCDIAGService] NCDIAG_InitProcess::onMiconCommunicationSetup
-I/start   (  146): [TC:74714][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.pmcs.pmcs:3]
-I/start   (  207): [TC:74722][TT:138] [Service] Before onAwake [nutshell.ics.ics]
-I/start   (  207): [TC:74722][TT:138] [nutshell.ics.ics] onAwake begin!
-I/start   (  207): [TC:74722][TT:138] [nutshell.ics.ics] onAwake end!
-I/start   (  207): [TC:74722][TT:138] [Service] After onAwake [nutshell.ics.ics]
-I/start   (  207): [TC:74805][TT:142] [Service] notify status ready [nutshell.ics.ics]
-I/start   (  163): [TC:74878][TT:153] [Service] After onAwake [nutshell.media.mediamanager]
-I/start   (  163): [TC:74878][TT:154] [Service] notify status ready [nutshell.media.mediamanager]
-I/start   (  146): [TC:74904][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.media.mediamanager:3]
-I/start   (  146): [TC:75044][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.ics.ics:3]
-I/start   (  207): [TC:75044][TT:143] [Service] Before onAwake [nutshell.ipa.ipa]
-I/start   (  207): [TC:75044][TT:143] [nutshell.ipa.ipa] onAwake begin!
-I/start   (  207): [TC:75044][TT:143] [nutshell.ipa.ipa] onAwake end!
-I/start   (  207): [TC:75044][TT:143] [Service] After onAwake [nutshell.ipa.ipa]
-I/start   (  207): [TC:75045][TT:144] [Service] notify status ready [nutshell.ipa.ipa]
-I/start   (  146): [TC:75046][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.ipa.ipa:3]
 I/start   (  871): [TC:75096][TT:9893] [UIFrameworkBase] [NGResourceManager::strReaderIdx][end]
 I/start   (  871): [TC:75096][TT:9893] [UIFrameworkBase] [NGResourceManager::updateStrPriotyLayers][begin]
 I/start   (  871): [TC:75096][TT:9894] [UIFrameworkBase] [NGResourceManager::strReaderIdx][begin]
@@ -349,10 +22,10 @@ I/start   (  871): [TC:75119][TT:9897] [UIFrameworkBase] [NGStatusManager::syncT
 I/start   (  871): [TC:75119][TT:9898] [UIFrameworkBase] [NGResourceManager::setTheme][begin] theme = _Day
 I/start   (  871): [TC:75121][TT:9899] [UIFrameworkBase] [NGStatusManager::syncThemeAndLanguage][theme sync][end]
 I/start   (  871): [TC:75121][TT:9899] [UIFrameworkBase] [NGStatusManager::onStrValueChanged][begin]
-I/start   (  225): [TC:75252][TT:594] [AppControl] [syncData] sync setting info
 I/start   (  871): [TC:75272][TT:9904] [UIFrameworkBase] [NGStatusManager::onStrValueChanged][end]
 I/start   (  871): [TC:75272][TT:9904] [UIFrameworkBase] [NGStatusManager::syncThemeAndLanguage][end]
 I/start   (  871): [TC:75273][TT:9904] [AppLauncher] [AppContext::onUIAwake][PrivateAPP::SyncThemeAndLanguage][end] !!![net.suntec.app.TDSystemUI.
+
 I/start   (  871): [TC:75274][TT:9906] [SystemUI] [NativeApp_SystemUI::onAwake] [begin]
 I/start   (  871): [TC:75275][TT:9906] [SystemUI] [SystemUICommon::initFrameCallback] [begin]
 I/start   (  871): [TC:75297][TT:9918] [SystemUI] [SystemUICommon::initFrameCallback] [end]
@@ -361,20 +34,6 @@ I/start   (  871): [TC:75306][TT:9924] [FCBase] [fnctl.pmcs onAwake] [begin]
 I/start   (  871): [TC:75306][TT:9924] [FCBase] [fnctl.pmcs onAwake] [end]
 I/start   (  871): [TC:75307][TT:9925] [FCBase] [fnctl.system.info onAwake] [begin]
 I/start   (  871): [TC:75307][TT:9925] [SystemInfoFunctionControl] [SystemInfo onAwake][begin]
-I/start   (  225): [TC:75314][TT:596] [AppControl] [notifySyncInfo] theme: [PureWhite_Day]
-I/start   (  225): [TC:75314][TT:596] [AppControl] [notifySyncInfo] language: [en-us]
-I/start   (  225): [TC:75314][TT:596] [AppControl] Appcontroller onAwake start syncPattern
-I/start   (  871): [TC:75357][TT:9928] [SystemInfoFunctionControl] [SystemInfo onAwake][pre: updateProductCountryEnd & getSoftNaviBegin]
-I/start   (  225): [TC:75365][TT:599] [AppControl] Appcontroller onAwake start startLastModeT
-I/start   (  225): [TC:75365][TT:599] [AppControl] [prepareHomeIntent] begin
-I/start   (  225): [TC:75365][TT:599] [AppControl] [prepareHomeIntent] finish
-I/start   (  225): [TC:75365][TT:599] [AppControl] Start app pre:net.suntec.app.TDHome.application
-I/start   (  225): [TC:75366][TT:599] [AppControl] Start app post:net.suntec.app.TDHome.application
-I/start   (  225): [TC:75366][TT:745] [AppControl] LastMode Begin
-I/start   (  149): [TC:75371][TT:38] [AppManager]   receive launchApp, appid net.suntec.app.TDHome.application
-I/start   (  149): [TC:75374][TT:75] [AppManager]   handle request startApplication, appid net.suntec.app.TDHome.application
-I/start   (  149): [TC:75375][TT:75] [AppManager]  send req InitUI Awake, appid net.suntec.app.TDHome.application
-I/start   (  225): [TC:75377][TT:600] [AppControl] Appcontroller onAwake start syncSystemInfo
 I/start   (  871): [TC:75405][TT:9930] [SystemInfoFunctionControl] [SystemInfo onAwake][end]
 I/start   (  871): [TC:75405][TT:9930] [FCBase] [fnctl.system.info onAwake] [end]
 I/start   (  871): [TC:75409][TT:9934] [FCBase] [fnctl.setting onAwake] [begin]
@@ -387,65 +46,27 @@ I/start   (  871): [TC:75430][TT:9943] [FCBase] [fnctl.media.rse onAwake] [begin
 I/start   (  871): [TC:75435][TT:9944] [FCBase] [fnctl.media.rse onAwake] [end]
 I/start   (  871): [TC:75439][TT:9947] [FCBase] [fnctl.media.btaudio onAwake] [begin]
 I/start   (  871): [TC:75439][TT:9948] [FCBase] [fnctl.media.btaudio onAwake] [end]
-I/start   (  225): [TC:75448][TT:603] [AppControl] Appcontroller onAwake end
-I/start   (  225): [TC:75448][TT:603] [fcservice] [onAwake] finished
-I/start   (  225): [TC:75448][TT:603] [Service] After onAwake [nutshell.systemui.fcservice]
-I/start   (  225): [TC:75448][TT:603] [Service] notify status ready [nutshell.systemui.fcservice]
 I/start   (  871): [TC:75456][TT:9952] [FCBase] [fnctl.media.dab onAwake] [begin]
 I/start   (  871): [TC:75458][TT:9953] [FCBase] [fnctl.media.dab onAwake] [end]
-I/start   (  146): [TC:75469][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.systemui.fcservice:3]
-I/start   (  225): [TC:75470][TT:604] [Service] Before onAwake [nutshell.ngserver.ngservice]
-I/start   (  225): [TC:75470][TT:604] [NGServer] NGService::onAwake() 
-I/start   (  225): [TC:75470][TT:604] [Service] After onAwake [nutshell.ngserver.ngservice]
-I/start   (  225): [TC:75475][TT:605] [Service] notify status ready [nutshell.ngserver.ngservice]
-I/start   (  146): [TC:75476][TT:17] [ServiceManager] ServiceStatusChanged [nutshell.ngserver.ngservice:3]
-I/start   (  225): [TC:75477][TT:606] [Service] Before onAwake [nutshell.security.security]
-I/start   (  225): [TC:75477][TT:606] [Service] After onAwake [nutshell.security.security]
-I/start   (  225): [TC:75478][TT:607] [Service] notify status ready [nutshell.security.security]
-I/start   (  146): [TC:75478][TT:18] [ServiceManager] ServiceStatusChanged [nutshell.security.security:3]
-I/start   (  162): [TC:75483][TT:117] [Service] After onAwake [nutshell.media.iapservice]
-I/start   (  162): [TC:75484][TT:117] [Service] notify status ready [nutshell.media.iapservice]
 I/start   (  871): [TC:75486][TT:9958] [FCBase] [fnctl.telema.remote onAwake] [begin]
 I/start   (  871): [TC:75486][TT:9959] [FCBase] [fnctl.telema.remote onAwake] [end]
-I/start   (  225): [TC:75506][TT:796] [AppControl] LastMode End
-I/start   (  226): [TC:75506][TT:287] [Service] Before onAwake [nutshell.commu.bluetooth]
-I/start   (  226): [TC:75509][TT:289] [BtService] NCBtSettingModule onAwake begin
-I/start   (  226): [TC:75510][TT:290] [BtService] NCBtGeneralManager init begin
-I/start   (  226): [TC:75512][TT:292] [BtService] NCBtGeneralManager initSupportedAvailableService begin
-I/start   (  226): [TC:75512][TT:292] [BtService] NCBtGeneralManager initSupportedAvailableService end & initSupportedAvailableFunction begin
-I/start   (  226): [TC:75513][TT:293] [BtService] NCBtGeneralManager initSupportedAvailableFunction end & initAvailableService begin
 I/start   (  871): [TC:75520][TT:9962] [FCBase] [fnctl.media.tsl onAwake] [begin]
 I/start   (  871): [TC:75524][TT:9965] [FCBase] [fnctl.media.tsl onAwake] [end]
-I/start   (  146): [TC:75525][TT:18] [ServiceManager] ServiceStatusChanged [nutshell.media.iapservice:3]
 I/start   (  871): [TC:75544][TT:9969] [FCBase] [fnctl.navi.traffic onAwake] [begin]
 I/start   (  871): [TC:75545][TT:9969] [FCBase] [fnctl.navi.traffic onAwake] [end]
 I/start   (  871): [TC:75552][TT:9975] [FCBase] [fnctl.picturechange onAwake] [begin]
 I/start   (  871): [TC:75553][TT:9975] [PictureChangeFC] [PictureChange onAwake][begin]
-I/start   (  871): [TC:75553][TT:9975] [PictureChangeFC] [PictureChange onAwake][pre: bindSignals]
-I/start   (  149): [TC:75556][TT:73] [AppManager]   receive broadcast, appid nutshell.intent.br.BOOT_COMPLETED
-I/start   (  226): [TC:75630][TT:295] [BtService] NCBtGeneralManager initAvailableService end & initAvailableFunction begin
-I/start   (  226): [TC:75631][TT:295] [BtService] NCBtGeneralManager initAvailableFunction end & initSppServer begin
-I/start   (  226): [TC:75631][TT:295] [BtService] NCBtGeneralManager initSppServer end & checkMicroPhoneValid begin
 I/start   (  871): [TC:75691][TT:9987] [PictureChangeFC] [PictureChange onAwake][end]
 I/start   (  871): [TC:75691][TT:9987] [FCBase] [fnctl.picturechange onAwake] [end]
 I/start   (  871): [TC:75701][TT:9991] [FCBase] [fnctl.media.usb onAwake] [begin]
 I/start   (  871): [TC:75705][TT:9993] [FCBase] [fnctl.media.usb onAwake] [end]
-I/start   (  226): [TC:75706][TT:297] [BtService] NCBtGeneralManager checkMicroPhoneValid end & checkSafeMode begin
 I/start   (  871): [TC:75710][TT:9998] [FCBase] [fnctl.media.dtv onAwake] [begin]
 I/start   (  871): [TC:75711][TT:9999] [FCBase] [fnctl.media.dtv onAwake] [end]
-I/start   (  226): [TC:75715][TT:298] [BtService] NCBtGeneralManager checkSafeMode end
-I/start   (  226): [TC:75715][TT:298] [BtService] NCBtGeneralManager init end & NCBtPairedTable begin
-I/start   (  226): [TC:75716][TT:299] [BtService] NCBtPairedTable end & _initialization start
 I/start   (  871): [TC:75714][TT:10002] [FCBase] [fnctl.media.otv onAwake] [begin]
 I/start   (  871): [TC:75726][TT:10003] [FCBase] [fnctl.media.otv onAwake] [end]
-I/start   (  226): [TC:75726][TT:305] [BtService] _initialization end
-I/start   (  226): [TC:75726][TT:305] [BtService] NCBtSettingModule onAwake end & NCBtHfpModule begin
 I/start   (  871): [TC:75735][TT:10008] [FCBase] [fnctl.media.ipod onAwake] [begin]
 I/start   (  871): [TC:75738][TT:10009] [FCBase] [fnctl.media.ipod onAwake] [end]
 I/start   (  871): [TC:75757][TT:10013] [FCBase] [fnctl.wifi.setting onAwake] [begin]
-I/start   (  226): [TC:75767][TT:310] [BtService] NCBtHfpCallStateManager begin
-I/start   (  226): [TC:75772][TT:312] [BtService] NCBtHfpCallStateManager create thread begin
-I/start   (  226): [TC:75772][TT:312] [BtService] NCBtHfpCallStateManager create thread end & notifyAllToSystem begin
 I/start   (  871): [TC:75784][TT:10028] [FCBase] [fnctl.wifi.setting onAwake] [end]
 I/start   (  871): [TC:75792][TT:10034] [FCBase] [fnctl.collection.phonelink onAwake] [begin]
 I/start   (  871): [TC:75792][TT:10035] [FCBase] [fnctl.collection.phonelink onAwake] [end]
@@ -453,26 +74,8 @@ I/start   (  871): [TC:75793][TT:10036] [FCBase] [fnctl.vehicle.config onAwake] 
 I/start   (  871): [TC:75795][TT:10036] [FCBase] [fnctl.vehicle.config onAwake] [end]
 I/start   (  871): [TC:75798][TT:10039] [FCBase] [fnctl.security onAwake] [begin]
 I/start   (  871): [TC:75801][TT:10041] [Security] [Security onAwake][begin]
-I/start   (  871): [TC:75816][TT:10042] [Security] [Security onAwake][step: restoreFromBackupMemory]
-I/start   (  871): [TC:75821][TT:10047] [Security] [Security onAwake][step: getProductCountry]
 I/start   (  871): [TC:75821][TT:10047] [FCBase] [fnctl.security onAwake] [end]
 I/start   (  871): [TC:75826][TT:10051] [FCBase] [fnctl.bt.handsfree onAwake] [begin]
-I/start   (  226): [TC:75863][TT:318] [BtService] NCBtHfpCallStateManager notifyAllToSystem end & notifyCallStatusToSystem begin
-I/start   (  226): [TC:75918][TT:319] [BtService] NCBtHfpCallStateManager notifyCallStatusToSystem end
-I/start   (  226): [TC:75919][TT:319] [BtService] NCBtHfpCallStateManager end
-I/start   (  226): [TC:75919][TT:319] [BtService] NCBtHfpModule onAwake end & NCBtPbModule begin
-I/start   (  226): [TC:75941][TT:325] [BtService] NCBtPbModule NCBtPbDataManager onAwake begin
-I/start   (  226): [TC:75976][TT:330] [BtService] NCBtPbDataManager getSearchHistoryDB begin
-I/start   (  226): [TC:75988][TT:336] [BtService] NCBtPbDataManager getSearchHistoryDB end & getPhotoDataDBHelper begin
-I/start   (  226): [TC:76000][TT:338] [BtService] NCBtPbDataManager getPhotoDataDBHelper end & createTable begin
-I/start   (  226): [TC:76023][TT:341] [BtService] NCBtPbDataManager createTable end & resetSetting first begin
-I/start   (  226): [TC:76030][TT:343] [BtService] NCBtPbDataManager resetSetting first end & resetSetting second begin
-I/start   (  226): [TC:76030][TT:343] [BtService] NCBtPbDataManager resetSetting second end & deletePhotos begin
-I/start   (  226): [TC:76048][TT:351] [BtService] NCBtPbDataManager deletePhotos end & initLanguage begin
-I/start   (  226): [TC:76112][TT:353] [BtService] NCBtPbDataManager initLanguage end & initCountryId begin
-I/start   (  226): [TC:76113][TT:353] [BtService] NCBtPbDataManager initCountryId end & initDebugMode begin
-I/start   (  226): [TC:76114][TT:354] [BtService] NCBtPbDataManager initDebugMode end
-I/start   (  226): [TC:76114][TT:354] [BtService] NCBtPbModule NCBtPbDataManager onAwake end & set env1 begin
 I/start   (  871): [TC:76146][TT:10063] [FCBase] [fnctl.bt.handsfree onAwake] [end]
 I/start   (  871): [TC:76159][TT:10070] [FCBase] [fnctl.bt.map onAwake] [begin]
 I/start   (  871): [TC:76163][TT:10074] [FCBase] [fnctl.bt.map onAwake] [end]
@@ -480,135 +83,66 @@ I/start   (  871): [TC:76167][TT:10077] [FCBase] [fnctl.media.radio onAwake] [be
 I/start   (  871): [TC:76168][TT:10079] [FCBase] [fnctl.media.radio onAwake] [end]
 I/start   (  871): [TC:76169][TT:10080] [statusbar] [NQStatusBar::updateInitialDisplay()] [initial status bar icon display begin]
 I/start   (  871): [TC:76170][TT:10080] [statusbar] [NQStatusBar::updateInitialDisplay()] [get SystemInfo Time Type begin]
-I/start   (  871): [TC:76170][TT:10080] [statusbar] [NQStatusBar::updateInitialDisplay()] [get SystemInfo Time Type end]
 I/start   (  871): [TC:76170][TT:10080] [statusbar] [NQStatusBar::updateInitialDisplay()] [get SystemInfo clock Type begin]
-I/start   (  871): [TC:76171][TT:10081] [statusbar] [NQStatusBar::updateInitialDisplay()] [get SystemInfo clock Type end]
 I/start   (  871): [TC:76171][TT:10082] [statusbar] [NQStatusBar::updateInitialDisplay()] [get SystemInfo time format begin]
-I/start   (  871): [TC:76172][TT:10082] [statusbar] [NQStatusBar::updateInitialDisplay()] [get SystemInfo time format end]
 I/start   (  871): [TC:76172][TT:10082] [statusbar] [NQStatusBar::updateInitialDisplay()] [set uicc img time time format begin]
-I/start   (  871): [TC:76175][TT:10085] [statusbar] [NQStatusBar::updateInitialDisplay()] [set uicc img time time format end]
 I/start   (  871): [TC:76175][TT:10085] [statusbar] [NQStatusBar::updateInitialDisplay()] [update time display begin]
-I/start   (  871): [TC:76175][TT:10085] [statusbar] [NQStatusBar::updateInitialDisplay()] [update time display end]
 I/start   (  871): [TC:76175][TT:10085] [statusbar] [NQStatusBar::updateInitialDisplay()] [get system info product country begin]
-I/start   (  871): [TC:76175][TT:10085] [statusbar] [NQStatusBar::updateInitialDisplay()] [get system info product country end]
 I/start   (  871): [TC:76175][TT:10085] [statusbar] [NQStatusBar::updateInitialDisplay()] [clear all item in statusbar begin]
-I/start   (  871): [TC:76175][TT:10085] [statusbar] [NQStatusBar::updateInitialDisplay()] [clear all item in statusbar  end]
 I/start   (  871): [TC:76175][TT:10085] [statusbar] [NQStatusBar::updateInitialDisplay()] [check tsl icon display begin]
 I/start   (  871): [TC:76176][TT:10086] [statusbar] [NQStatusBar::checkTSL()] [check tsl icon index begin]
-I/start   (  871): [TC:76177][TT:10087] [statusbar] [NQStatusBar::checkTSL()] [check tsl icon index end]
 I/start   (  871): [TC:76177][TT:10087] [statusbar] [NQStatusBar::checkTSL()] [get product country (getUICFunc isSupportTsl) begin]
-I/start   (  871): [TC:76179][TT:10089] [statusbar] [NQStatusBar::checkTSL()] [get product country (getUICFunc isSupportTsl) end]
 I/start   (  871): [TC:76179][TT:10089] [statusbar] [NQStatusBar::checkTSL()] [get system info tsl status begin]
-I/start   (  226): [TC:76190][TT:360] [BtService] NCBtPbModule set env1 end & set env2 begin
-I/start   (  226): [TC:76190][TT:361] [BtService] NCBtPbModule set env2 end & loadDevice begin
-I/start   (  226): [TC:76190][TT:361] [BtService] NCBtPbModule getAllDevStatus begin
-I/start   (  226): [TC:76191][TT:362] [BtService] NCBtPbModule getAllDevStatus end & create device begin
-I/start   (  226): [TC:76191][TT:362] [BtService] NCBtPbModule create device end & first env update begin
-I/start   (  871): [TC:76194][TT:10091] [statusbar] [NQStatusBar::checkTSL()] [get system info tsl status end]
 I/start   (  871): [TC:76194][TT:10091] [statusbar] [NQStatusBar::checkTSL()] [delete tsl button begin]
-I/start   (  871): [TC:76194][TT:10091] [statusbar] [NQStatusBar::checkTSL()] [delete tsl button update position]
-I/start   (  871): [TC:76194][TT:10091] [statusbar] [NQStatusBar::updateInitialDisplay()] [check tsl icon display end]
 I/start   (  871): [TC:76194][TT:10091] [statusbar] [NQStatusBar::updateInitialDisplay()] [check p2p wifi icon display begin]
 I/start   (  871): [TC:76194][TT:10091] [statusbar] [NQStatusBar::checkWifiP2P()] [check p2p wifi icon index begin]
-I/start   (  871): [TC:76194][TT:10091] [statusbar] [NQStatusBar::checkWifiP2P()] [check p2p wifi icon index end]
 I/start   (  871): [TC:76194][TT:10091] [statusbar] [NQStatusBar::checkWifiP2P()] [get system info wifi status log begin]
-I/start   (  871): [TC:76209][TT:10094] [statusbar] [NQStatusBar::checkWifiP2P()] [get system info wifi status log end]
 I/start   (  871): [TC:76213][TT:10095] [statusbar] [NQStatusBar::checkWifiP2P()] [delete p2p wifi icon display begin]
-I/start   (  871): [TC:76213][TT:10095] [statusbar] [NQStatusBar::checkWifiP2P()] [delete p2p wifi icon display end]
-I/start   (  871): [TC:76213][TT:10095] [statusbar] [NQStatusBar::updateInitialDisplay()] [check p2p wifi icon display end]
 I/start   (  871): [TC:76213][TT:10095] [statusbar] [NQStatusBar::updateInitialDisplay()] [check sta wifi icon display begin]
 I/start   (  871): [TC:76213][TT:10095] [statusbar] [NQStatusBar::checkWifiConn()] [check sta wifi icon index begin]
-I/start   (  871): [TC:76213][TT:10095] [statusbar] [NQStatusBar::checkWifiConn()] [check sta wifi icon index end]
 I/start   (  871): [TC:76213][TT:10095] [statusbar] [NQStatusBar::checkWifiConn()] [get system info wifi status log begin]
-I/start   (  871): [TC:76229][TT:10098] [statusbar] [NQStatusBar::checkWifiConn()] [get system info wifi status log end]
 I/start   (  871): [TC:76234][TT:10100] [statusbar] [NQStatusBar::checkWifiConn()] [delete sta wifi icon display begin]
-I/start   (  871): [TC:76234][TT:10100] [statusbar] [NQStatusBar::checkWifiConn()] [delete sta wifi icon display end]
-I/start   (  871): [TC:76234][TT:10100] [statusbar] [NQStatusBar::updateInitialDisplay()] [check sta wifi icon display end]
 I/start   (  871): [TC:76234][TT:10100] [statusbar] [NQStatusBar::updateInitialDisplay()] [check phone connect icon display begin]
 I/start   (  871): [TC:76234][TT:10100] [statusbar] [NQStatusBar::checkWifiConn()] [check phone connect icon index begin]
-I/start   (  871): [TC:76234][TT:10100] [statusbar] [NQStatusBar::checkWifiConn()] [check phone connect icon index end]
 I/start   (  871): [TC:76234][TT:10100] [statusbar] [NQStatusBar::checkWifiConn()] [get system info fc log begin]
-I/start   (  871): [TC:76254][TT:10103] [statusbar] [NQStatusBar::checkWifiConn()] [get system info fc log end]
-I/start   (  871): [TC:76265][TT:10105] [statusbar] [NQStatusBar::checkWifiConn()] [delete phone con icon display] begin
-I/start   (  871): [TC:76265][TT:10105] [statusbar] [NQStatusBar::checkWifiConn()] [delete phone con icon display] end
-I/start   (  871): [TC:76265][TT:10105] [statusbar] [NQStatusBar::updateInitialDisplay()] [check phone connect icon display end]
 I/start   (  871): [TC:76266][TT:10105] [statusbar] [NQStatusBar::updateInitialDisplay()] [check phone battery icon display begin]
 I/start   (  871): [TC:76266][TT:10105] [statusbar] [NQStatusBar::checkPhoneBattery()] [check phone battery icon index begin]
-I/start   (  871): [TC:76266][TT:10105] [statusbar] [NQStatusBar::checkPhoneBattery()] [check phone battery icon index end]
 I/start   (  871): [TC:76266][TT:10105] [statusbar] [NQStatusBar::checkPhoneBattery()] [get system info fc log begin]
-I/start   (  871): [TC:76286][TT:10106] [statusbar] [NQStatusBar::checkPhoneBattery()] [get system info fc log end]
-I/start   (  871): [TC:76290][TT:10108] [statusbar] [NQStatusBar::checkPhoneBattery()] [get phone battery icon display index] begin
-I/start   (  871): [TC:76290][TT:10108] [statusbar] [NQStatusBar::checkPhoneBattery()] [get phone battery icon display index] end
-I/start   (  871): [TC:76290][TT:10108] [statusbar] [NQStatusBar::updateInitialDisplay()] [check phone battery icon display end]
 I/start   (  871): [TC:76290][TT:10108] [statusbar] [NQStatusBar::updateInitialDisplay()] [check phone field icon display begin]
 I/start   (  871): [TC:76290][TT:10108] [statusbar] [NQStatusBar::checkPhoneEFS()] [check phone field icon index begin]
-I/start   (  871): [TC:76290][TT:10108] [statusbar] [NQStatusBar::checkPhoneEFS()] [check phone field icon index end]
 I/start   (  871): [TC:76290][TT:10108] [statusbar] [NQStatusBar::checkPhoneEFS()] [get system info fc log begin]
-I/start   (  871): [TC:76294][TT:10109] [statusbar] [NQStatusBar::checkPhoneEFS()] [get system info fc log end]
-I/start   (  226): [TC:76295][TT:364] [BtService] NCBtPbModule first env update end second env update begin
-I/start   (  871): [TC:76309][TT:10110] [statusbar] [NQStatusBar::checkPhoneEFS()] [delete phone field icon display] begin
-I/start   (  871): [TC:76309][TT:10110] [statusbar] [NQStatusBar::checkPhoneEFS()] [delete phone field icon display] end
-I/start   (  871): [TC:76309][TT:10110] [statusbar] [NQStatusBar::updateInitialDisplay()] [check phone field icon display end]
 I/start   (  871): [TC:76309][TT:10110] [statusbar] [NQStatusBar::updateInitialDisplay()] [check dcm connect icon display begin]
 I/start   (  871): [TC:76309][TT:10110] [statusbar] [NQStatusBar::checkDCM()] [check dcm icon index begin]
-I/start   (  871): [TC:76309][TT:10110] [statusbar] [NQStatusBar::checkDCM()] [check dcm icon index end]
-I/start   (  871): [TC:76309][TT:10110] [statusbar] [NQStatusBar::checkDCM()] [get DCM Dev Status] begin
-I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::checkDCM()] [get DCM Dev Status] end
-I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::checkDCM()] [delete dcm icon display] begin
-I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::checkDCM()] [delete dcm icon display] end
-I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::updateInitialDisplay()] [check dcm connect icon display end]
 I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::updateInitialDisplay()] [check communication icon display begin]
-I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::updateInitialDisplay()] [check communication icon display end]
 I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::updateInitialDisplay()] [check weather icon display begin]
 I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::checkWeather()] [check weather icon index begin]
-I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::checkWeather()] [check weather icon index end]
 I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::checkWeather()] [getUICFunc isSupportWeather begin]
-I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::checkWeather()] [getUICFunc isSupportWeather end]
-I/start   (  871): [TC:76323][TT:10112] [statusbar] [NQStatusBar::checkWeather()] [delete weather icon display] begin
-I/start   (  871): [TC:76324][TT:10113] [statusbar] [NQStatusBar::checkWeather()] [delete weather icon display] end
-I/start   (  871): [TC:76324][TT:10113] [statusbar] [NQStatusBar::updateInitialDisplay()] [check weather icon display end]
-I/start   (  871): [TC:76325][TT:10114] [statusbar] [NQStatusBar::updateInitialDisplay()] [initial status bar icon display end]
 I/start   (  871): [TC:76326][TT:10115] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [begin]
-I/start   (  871): [TC:76327][TT:10116] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [restore When Opening End]
-I/start   (  871): [TC:76327][TT:10116] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [getSystemInfoProductName]
-I/start   (  871): [TC:76328][TT:10116] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [getSystemInfoProductCountry]
-I/start   (  871): [TC:76328][TT:10117] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [is need to diag]
-I/start   (  226): [TC:76346][TT:365] [BtService] NCBtPbModule second env update end & printInfo begin
-I/start   (  226): [TC:76346][TT:365] [BtService] NCBtPbModule printInfo end
-I/start   (  226): [TC:76348][TT:365] [BtService] NCBtPbModule loadDevice end & pushEvent begin
-I/start   (  226): [TC:76349][TT:366] [BtService] NCBtPbModule pushEvent end & m_intThread.onAwake begin
-I/start   (  226): [TC:76353][TT:366] [BtService] NCBtPbModule m_intThread.onAwake end
-I/start   (  226): [TC:76353][TT:366] [BtService] NCBtPbModule onAwake end & NCBtMapModule begin
-I/start   (  226): [TC:76354][TT:366] [BtService] NCBtMapModule NCBtMapProvider begin
-I/start   (  226): [TC:76355][TT:367] [BtService] NCBtMapModule NCBtMapProvider end & NCBtMapSoundManager begin
 I/start   (  871): [TC:76359][TT:10119] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [reqLastMode begin]
-I/start   (  225): [TC:76365][TT:2] [AppControl] [startLastMode] notifyStartLastMode
-I/start   (  225): [TC:76365][TT:2] [AppControl] get Last info
-I/start   (  226): [TC:76371][TT:368] [BtService] NCBtMapSoundManager new NCBtMapPlayer  begin
-I/start   (  225): [TC:76430][TT:4] [AppControl] after get sub last info
-I/start   (  225): [TC:76438][TT:11] [AppControl] get Last info finish
-I/start   (  225): [TC:76438][TT:11] [AppControl] [HMStartupPlugin] notifyStartLastMode mode : [0]
-I/start   (  871): [TC:76442][TT:10120] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [reqLastMode end]
-I/start   (  871): [TC:76442][TT:10120] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] getSecurityStatus
-I/start   (  871): [TC:76522][TT:10130] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [is in valet mode]
 I/start   (  871): [TC:76522][TT:10130] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [restoreAfterValetMode begin]
 I/start   (  871): [TC:76522][TT:10130] [appstart] [AppStartCommon::restoreAfterValetMode()] [begin]
 I/start   (  871): [TC:76525][TT:10134] [TDSystemUI] [Caution Screen::onNotifyUpdateCautionDisplay()] [begin]
-I/start   (  871): [TC:76525][TT:10134] [TDSystemUI] [Caution Screen::onNotifyUpdateCautionDisplay()] [set text visivle] [start]
 I/start   (  871): [TC:76551][TT:10157] [TDSystemUI] [Caution Screen::onNotifyUpdateCautionDisplay()] [set text visivle] [end]
 I/start   (  871): [TC:76551][TT:10157] [appstart] [AppStartCommon::restoreAfterValetMode()] [end]
-I/start   (  871): [TC:76551][TT:10157] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [restoreAfterValetMode end]
 I/start   (  871): [TC:76551][TT:10157] [appstart] [AppStartCommon::restoreWhenOpeningEnd()] [end]
-I/start   (  871): [TC:76554][TT:10159] [SystemUI] [SystemUICommon::onAwake] [end]
+I/start   (  871): [TC:76554][TT:10159] [SystemUI] [SystemUICommon::onAwake] [end]  ==============
 I/start   (  871): [TC:76555][TT:10159] [SystemUI] [NativeApp_SystemUI::onAwake] [end]
+
+
 I/start   (  871): [TC:76556][TT:10160] [AppLauncher] [AppContext::onUIInitialize][begin] !!![net.suntec.app.TDSystemUI.application]
 I/start   (  871): [TC:76566][TT:10161] [AppLauncher] [AppContext::onUIInitialize][end] !!![net.suntec.app.TDSystemUI.application]
-I/start   (  149): [TC:76570][TT:39] [AppManager]   receive resp4initAppUIAwake, appid net.suntec.app.TDSystemUI.application
-I/start   (  149): [TC:76570][TT:75] [AppManager]   handle resp initui_awake, appid net.suntec.app.TDSystemUI.application
+
+
+
 I/start   (  871): [TC:76572][TT:10162] [AppLauncher] [AppContext::onUIAwake][end] !!![net.suntec.app.TDSystemUI.application]
+
+
+
 I/start   (  871): [TC:76573][TT:10163] [---------QML---------] [NQGuiApplication::notify] [triggerUpdateEvent] [begin]
-I/start   (  149): [TC:76592][TT:76] [AppManager]  send req ActiveShow, appid net.suntec.app.TDSystemUI.application
 I/start   (  871): [TC:77361][TT:10737] [---------QML---------] [NQGuiApplication::notify] [triggerUpdateEvent] [end]
+
+
+
 I/start   (  871): [TC:77361][TT:10737] [---------QML---------] [QGuiApplication::notify] [begin]
 I/start   (  871): [TC:77444][TT:10812] [---------QML---------] [NQPngTexture::bind] [begin]
 I/start   (  871): [TC:77446][TT:10814] [---------QML---------] [NQPngTexture::bind] rebound ok [end]
@@ -629,66 +163,24 @@ I/start   (  871): [TC:77462][TT:10829] [---------QML---------] [NQPngTexture::b
 I/start   (  871): [TC:77463][TT:10830] [---------QML---------] [NQPngTexture::bind] [begin]
 I/start   (  871): [TC:77463][TT:10830] [---------QML---------] [NQPngTexture::bind] rebound ok [end]
 I/start   (  871): [TC:77522][TT:10859] [---------QML---------] [QGuiApplication::notify] [end]
+
+
 I/start   (  871): [TC:77526][TT:10859] [AppLauncher] [AppMediaInterface::notifySoundModeChanged][begin] !!!
-I/start   (  871): [TC:77526][TT:10860] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77526][TT:10860] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77526][TT:10860] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  226): [TC:77600][TT:441] [BtService] NCBtMapSoundManager new NCBtMapPlayer end
-I/start   (  226): [TC:77600][TT:441] [BtService] NCBtMapModule NCBtMapSoundManager end
-I/start   (  226): [TC:77600][TT:441] [BtService] NCBtMapModule onAwake end
-I/start   (  226): [TC:77601][TT:442] [Service] After onAwake [nutshell.commu.bluetooth]
-I/start   (  226): [TC:77610][TT:443] [Service] notify status ready [nutshell.commu.bluetooth]
-I/start   (  871): [TC:77613][TT:10878] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  147): [TC:77616][TT:10] [OpeningPlayer] eos
-I/start   (  147): [TC:77617][TT:0] [OpeningService] 9369 : correct time
-I/start   (  147): [TC:77617][TT:0] [OpeningService] OpeningMoviePlayer::play end
-I/start   (  147): [TC:77618][TT:0] [OpeningService] NG : iauto.opening.movie.prepare
-I/start   (  146): [TC:77619][TT:18] [ServiceManager] ServiceStatusChanged [nutshell.commu.bluetooth:3]
-I/start   (  147): [TC:77623][TT:598] [OpeningService] *end1 DrawLastFrame*
-I/start   (  871): [TC:77669][TT:10912] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77670][TT:10913] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77670][TT:10913] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77672][TT:10915] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77678][TT:10921] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77680][TT:10922] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77685][TT:10927] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77711][TT:10945] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77742][TT:10968] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77745][TT:10971] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77746][TT:10972] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
 I/start   (  871): [TC:77751][TT:10977] [AppLauncher] [AppMediaInterface::notifySoundModeChanged][end] !!!
 I/start   (  871): [TC:77751][TT:10977] [AppLauncher] [AppMediaInterface::notifySoundModeChanged][begin] !!!
-I/start   (  871): [TC:77752][TT:10977] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77752][TT:10977] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77752][TT:10977] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77757][TT:10978] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77763][TT:10979] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77763][TT:10979] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77763][TT:10979] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77763][TT:10979] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77769][TT:10980] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77769][TT:10980] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77769][TT:10980] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77773][TT:10982] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77777][TT:10983] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77778][TT:10984] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
-I/start   (  871): [TC:77778][TT:10984] [AppLauncher] [AppMediaInterface::notifySoundModeChanged -- Callback]!!!
 I/start   (  871): [TC:77778][TT:10984] [AppLauncher] [AppMediaInterface::notifySoundModeChanged][end] !!!
 I/start   (  871): [TC:77782][TT:10987] [UIFrameworkBase] [NGStatusNotifyHandler::onNotifyThemeChange][begin]
-I/start   (  225): [TC:77782][TT:2] [AppControl] [SYNC_FINISHED] sync oper regu [4]
-I/start   (  225): [TC:77782][TT:2] [AppControl] [SYNC_FINISHED] sync oper regu [nutshell.app.sync]
 I/start   (  871): [TC:77782][TT:10987] [UIFrameworkBase] [NGStatusNotifyHandler::onNotifyThemeChange][end]
 I/start   (  871): [TC:77782][TT:10987] [UIFrameworkBase] [NGStatusNotifyHandler::onNotifyLanguageChange][begin]
 I/start   (  871): [TC:77782][TT:10987] [UIFrameworkBase] [NGResourceManager::setLanguage][begin] language = en-us
 I/start   (  871): [TC:77782][TT:10987] [UIFrameworkBase] [NGResourceManager::loadResAfterSnapshot][begin]
 I/start   (  871): [TC:77783][TT:10988] [UIFrameworkBase] [NGResourceManager::strReaderIdx][begin]
 I/start   (  871): [TC:77783][TT:10988] [UIFrameworkBase] [NGResourceManager::strReaderIdx][end]
-I/start   (  871): [TC:77783][TT:10988] [UIFrameworkBase] [NGResourceManager::strReaderIdx][begin]
+I/start   (  871): [TC:77783][TT:10988] [UIFrameworkBase] [NGResourceManager::strReaderIdx][begin]2] [end]
 I/start   (  871): [TC:77783][TT:10988] [UIFrameworkBase] [NGResourceManager::strReaderIdx][end]
 I/start   (  871): [TC:77783][TT:10988] [UIFrameworkBase] [NGStatusNotifyHandler::onNotifyLanguageChange][language signal][begin]
 I/start   (  871): [TC:77798][TT:11001] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
 I/start   (  871): [TC:77927][TT:11058] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][begin]!!!
-I/start   (  871): [TC:77928][TT:11058] [---------QML---------] [NQPrivateAPI::LoadFontByDestination] [dstName: T0, dstCountry: China]
 I/start   (  871): [TC:78045][TT:11115] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][end]!!!
 I/start   (  871): [TC:78050][TT:11120] [---------QML---------] [NQResourceManager::resetLanguage] [begin]
 I/start   (  871): [TC:78132][TT:11149] [---------QML---------] [NQResourceManager::resetLanguage] [end]
@@ -697,16 +189,13 @@ I/start   (  871): [TC:78177][TT:11176] [---------QML---------] [NQApplication::
 I/start   (  871): [TC:78183][TT:11181] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [end]
 I/start   (  871): [TC:78184][TT:11182] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
 I/start   (  871): [TC:78184][TT:11182] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][begin]!!!
-I/start   (  871): [TC:78184][TT:11182] [---------QML---------] [NQPrivateAPI::LoadFontByDestination] [dstName: T0, dstCountry: China]
 I/start   (  871): [TC:78184][TT:11182] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][end]!!!
 I/start   (  871): [TC:78184][TT:11182] [---------QML---------] [NQResourceManager::resetLanguage] [begin]
 I/start   (  871): [TC:78184][TT:11182] [---------QML---------] [NQResourceManager::resetLanguage] [end]
 I/start   (  871): [TC:78184][TT:11182] [---------QML---------] [NQApplication::onStatusContextChanged] [iter items] [begin]
 I/start   (  871): [TC:78195][TT:11192] [---------QML---------] [NQApplication::onStatusContextChanged] [iter items] [end]
-I/start   (  871): [TC:78195][TT:11193] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [end]
-I/start   (  871): [TC:78196][TT:11193] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
+I/start   (  871): [TC:78195][TT:11193] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
 I/start   (  871): [TC:78196][TT:11193] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][begin]!!!
-I/start   (  871): [TC:78196][TT:11193] [---------QML---------] [NQPrivateAPI::LoadFontByDestination] [dstName: T0, dstCountry: China]
 I/start   (  871): [TC:78196][TT:11193] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][end]!!!
 I/start   (  871): [TC:78196][TT:11193] [---------QML---------] [NQResourceManager::resetLanguage] [begin]
 I/start   (  871): [TC:78196][TT:11193] [---------QML---------] [NQResourceManager::resetLanguage] [end]
@@ -715,7 +204,6 @@ I/start   (  871): [TC:78196][TT:11193] [---------QML---------] [NQApplication::
 I/start   (  871): [TC:78196][TT:11193] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [end]
 I/start   (  871): [TC:78197][TT:11194] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
 I/start   (  871): [TC:78197][TT:11194] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][begin]!!!
-I/start   (  871): [TC:78197][TT:11194] [---------QML---------] [NQPrivateAPI::LoadFontByDestination] [dstName: T0, dstCountry: China]
 I/start   (  871): [TC:78197][TT:11194] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][end]!!!
 I/start   (  871): [TC:78197][TT:11194] [---------QML---------] [NQResourceManager::resetLanguage] [begin]
 I/start   (  871): [TC:78197][TT:11194] [---------QML---------] [NQResourceManager::resetLanguage] [end]
@@ -724,7 +212,6 @@ I/start   (  871): [TC:78197][TT:11195] [---------QML---------] [NQApplication::
 I/start   (  871): [TC:78197][TT:11195] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [end]
 I/start   (  871): [TC:78198][TT:11195] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
 I/start   (  871): [TC:78198][TT:11195] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][begin]!!!
-I/start   (  871): [TC:78198][TT:11195] [---------QML---------] [NQPrivateAPI::LoadFontByDestination] [dstName: T0, dstCountry: China]
 I/start   (  871): [TC:78198][TT:11195] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][end]!!!
 I/start   (  871): [TC:78198][TT:11195] [---------QML---------] [NQResourceManager::resetLanguage] [begin]
 I/start   (  871): [TC:78198][TT:11195] [---------QML---------] [NQResourceManager::resetLanguage] [end]
@@ -733,7 +220,6 @@ I/start   (  871): [TC:78199][TT:11196] [---------QML---------] [NQApplication::
 I/start   (  871): [TC:78199][TT:11196] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [end]
 I/start   (  871): [TC:78199][TT:11196] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
 I/start   (  871): [TC:78199][TT:11196] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][begin]!!!
-I/start   (  871): [TC:78199][TT:11196] [---------QML---------] [NQPrivateAPI::LoadFontByDestination] [dstName: T0, dstCountry: China]
 I/start   (  871): [TC:78200][TT:11197] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][end]!!!
 I/start   (  871): [TC:78200][TT:11197] [---------QML---------] [NQResourceManager::resetLanguage] [begin]
 I/start   (  871): [TC:78200][TT:11197] [---------QML---------] [NQResourceManager::resetLanguage] [end]
@@ -742,7 +228,6 @@ I/start   (  871): [TC:78201][TT:11197] [---------QML---------] [NQApplication::
 I/start   (  871): [TC:78201][TT:11197] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [end]
 I/start   (  871): [TC:78201][TT:11198] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
 I/start   (  871): [TC:78201][TT:11198] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][begin]!!!
-I/start   (  871): [TC:78201][TT:11198] [---------QML---------] [NQPrivateAPI::LoadFontByDestination] [dstName: T0, dstCountry: China]
 I/start   (  871): [TC:78201][TT:11198] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][end]!!!
 I/start   (  871): [TC:78201][TT:11198] [---------QML---------] [NQResourceManager::resetLanguage] [begin]
 I/start   (  871): [TC:78201][TT:11198] [---------QML---------] [NQResourceManager::resetLanguage] [end]
@@ -751,7 +236,6 @@ I/start   (  871): [TC:78203][TT:11199] [---------QML---------] [NQApplication::
 I/start   (  871): [TC:78203][TT:11199] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [end]
 I/start   (  871): [TC:78203][TT:11200] [---------QML---------] [NQApplication::onStatusContextChanged] app[SystemApp] type[2] [begin]
 I/start   (  871): [TC:78203][TT:11200] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][begin]!!!
-I/start   (  871): [TC:78203][TT:11200] [---------QML---------] [NQPrivateAPI::LoadFontByDestination] [dstName: T0, dstCountry: China]
 I/start   (  871): [TC:78203][TT:11200] [---------QML---------] [NQPrivateAPI::LoadFontByDestination][end]!!!
 I/start   (  871): [TC:78203][TT:11200] [---------QML---------] [NQResourceManager::resetLanguage] [begin]
 I/start   (  871): [TC:78203][TT:11200] [---------QML---------] [NQResourceManager::resetLanguage] [end]
@@ -781,8 +265,6 @@ I/start   (  871): [TC:78222][TT:11216] [---------QML---------] [NQPngTexture::b
 I/start   (  871): [TC:78222][TT:11216] [---------QML---------] [NQPngTexture::bind] rebound ok [end]
 I/start   (  871): [TC:78227][TT:11221] [---------QML---------] [APP::forcePaint] [end]
 I/start   (  871): [TC:78227][TT:11221] [---------QML---------] [NQRootWindow::repaint] [end]
-I/start   (  225): [TC:78230][TT:12] [AppControl] [SYNC_FINISHED] sync oper regu [1]
-I/start   (  225): [TC:78230][TT:12] [AppControl] [SYNC_FINISHED] sync oper regu [nutshell.app.sync]
 I/start   (  871): [TC:78231][TT:11221] [UIFrameworkBase] [NGStatusNotifyHandler::onNotifyLanguageChange][end]
 I/start   (  871): [TC:78231][TT:11221] [AppLauncher] [AppContext::onUIAwake][begin] !!![net.suntec.app.TDHome.application]
 I/start   (  871): [TC:78232][TT:11222] [TDHome] [NativeApp_Home::onAwake] [begin]
@@ -795,33 +277,13 @@ I/start   (  871): [TC:78299][TT:11255] [FCBase] [fnctl.vehicle.eco onAwake] [en
 I/start   (  871): [TC:78301][TT:11257] [FCBase] [fnctl.bt.phonebook onAwake] [begin]
 I/start   (  871): [TC:78302][TT:11258] [FCBase] [fnctl.bt.phonebook onAwake] [end]
 I/start   (  871): [TC:78305][TT:11260] [FCBase] [fnctl.bt.setting onAwake] [begin]
-I/start   (  871): [TC:78306][TT:11262] [BtSettingFunctionControl] get Power Status
-I/start   (  871): [TC:78308][TT:11263] [BtSettingFunctionControl] begin--get NCEnvironment
-I/start   (  871): [TC:78313][TT:11265] [BtSettingFunctionControl] end--get NCEnvironment
-I/start   (  871): [TC:78313][TT:11265] [BtSettingFunctionControl] begin modelUpdate power state
-I/start   (  871): [TC:78323][TT:11274] [BtSettingFunctionControl] end modelUpdate power state
-I/start   (  871): [TC:78323][TT:11274] [BtSettingFunctionControl] get Power Status End & get Paired Device Info Begin
-I/start   (  871): [TC:78324][TT:11275] [BtSettingFunctionControl] begin--getPairedDeviceInfo
-I/start   (  871): [TC:78327][TT:11276] [BtSettingFunctionControl] end--getPairedDeviceInfo
-I/start   (  871): [TC:78327][TT:11276] [BtSettingFunctionControl] get Paired DeviceInfo End & get Supported Service Begin
-I/start   (  871): [TC:78327][TT:11276] [BtSettingFunctionControl] begin--getSupportedServiceOfHeadUnit
-I/start   (  871): [TC:78329][TT:11278] [BtSettingFunctionControl] end--getSupportedServiceOfHeadUnit
-I/start   (  871): [TC:78329][TT:11278] [BtSettingFunctionControl] get Supported Service End
-I/start   (  871): [TC:78329][TT:11278] [BtSettingFunctionControl] bt audio sync
-I/start   (  871): [TC:78353][TT:11281] [BtSettingFunctionControl] bt audio sync end
 I/start   (  871): [TC:78354][TT:11281] [FCBase] [fnctl.bt.setting onAwake] [end]
 I/start   (  871): [TC:78354][TT:11281] [TDHome] [NativeApp_Home::onAwake] [readBool begin]
-I/start   (  871): [TC:78356][TT:11283] [TDHome] [NativeApp_Home::onAwake] [readBool end]
 I/start   (  871): [TC:78356][TT:11283] [TDHome] [NativeApp_Home::onAwake] [setAwakeStatus begin]
-I/start   (  871): [TC:78357][TT:11284] [TDHome] [NativeApp_Home::onAwake] [setAwakeStatus end]
 I/start   (  871): [TC:78357][TT:11284] [TDHome] [NativeApp_Home::onAwake] [readUInt begin]
-I/start   (  871): [TC:78357][TT:11284] [TDHome] [NativeApp_Home::onAwake] [readUInt end]
-I/start   (  871): [TC:78357][TT:11284] [TDHome] [NativeApp_Home::onAwake] [setHomeSetting start]
-I/start   (  871): [TC:78480][TT:11299] [TDHome] [NativeApp_Home::onAwake] [setHomeSetting end]
 I/start   (  871): [TC:78483][TT:11302] [TDHome] [NativeApp_Home::onAwake] [home setActivated begin]
 I/start   (  871): [TC:78484][TT:11303] [TDHome] [NativeApp_Home::onAwake] [home onPreActive begin]
 I/start   (  871): [TC:78484][TT:11303] [TDHome] [HomeControl::onPreActive] [begin]
-I/start   (  871): [TC:78486][TT:11304] [TDHome] [HomeControl::onPreActive] [StartMenu onPreActive step]
 I/start   (  871): [TC:78486][TT:11305] [StartMenu] [StartMenu::onPreActive()] [begin]
 I/start   (  871): [TC:78486][TT:11305] [StartMenu] [StartMenu::onInitList()] [begin]
 I/start   (  871): [TC:78487][TT:11305] [StartMenu] [StartMenu::checkDestMenu()] [begin]
@@ -868,14 +330,9 @@ I/start   (  871): [TC:78525][TT:11311] [StartMenu] [StartMenu::onInitList()] [e
 I/start   (  871): [TC:78525][TT:11311] [StartMenu] [StartMenu::onPreActive()] [connect()] [begin]
 I/start   (  871): [TC:78538][TT:11314] [StartMenu] [StartMenu::onPreActive()] [connect()] [end]
 I/start   (  871): [TC:78538][TT:11314] [StartMenu] [StartMenun::onPreActive()] [end]
-I/start   (  871): [TC:78540][TT:11317] [TDHome] [HomeControl::onPreActive] [clearLayout step]
 I/start   (  871): [TC:78540][TT:11317] [TDHome] [CustomKey::clearLayout] [begin]
 I/start   (  871): [TC:78540][TT:11317] [TDHome] [CustomKey::clearLayout] [end]
-I/start   (  871): [TC:78540][TT:11317] [TDHome] [HomeControl::onPreActive] [createPattern step]
-I/start   (  871): [TC:78542][TT:11319] [TDHome] [HomeControl::onPreActive] [setLayout step]
 I/start   (  871): [TC:78543][TT:11319] [TDHome] [CustomKey::setLayout] [begin]
-I/start   (  871): [TC:78543][TT:11319] [TDHome] [CustomKey::setLayout] [setViewPos step]
-I/start   (  871): [TC:78563][TT:11330] [TDHome] [CustomKey::setLayout] [inView step]
 I/start   (  871): [TC:78569][TT:11336] [---------QML---------] [NQQmlFileLoader::loadQmlView] id[PhoneHome_1_4] [begin]
 I/start   (  871): [TC:78570][TT:11337] [---------QML---------] [NQQmlFileLoader::loadCache] qmlName[PhoneHome_1_4] [begin]
 I/start   (  871): [TC:78571][TT:11338] [---------QML---------] [NQQmlFileLoader::loadCache] success qmlName[PhoneHome_1_4] [end]
@@ -1122,9 +579,6 @@ I/start   (  871): [TC:78704][TT:11436] [---------QML---------] [NQTextExtend::s
 I/start   (  871): [TC:78704][TT:11436] [---------QML---------] [NQTextExtend::setStyleId] [end]
 I/start   (  871): [TC:78704][TT:11436] [---------QML---------] [NQTextExtend::setStrId] [end]
 I/start   (  871): [TC:78706][TT:11438] [---------QML---------] [NQViewBase::active] [end]
-I/start   (  871): [TC:78707][TT:11438] [TDHome] [CustomKey::setLayout] [setViewPos step]
-I/start   (  871): [TC:78707][TT:11438] [TDHome] [CustomKey::setLayout] [inView step]
-I/start   (  147): [TC:78707][TT:613] [OpeningService] plcaution do not start
 I/start   (  871): [TC:78708][TT:11439] [---------QML---------] [NQQmlFileLoader::loadQmlView] id[TslHome_1_4_1] [begin]
 I/start   (  871): [TC:78708][TT:11439] [---------QML---------] [NQQmlFileLoader::loadCache] qmlName[TslHome_1_4_1] [begin]
 I/start   (  871): [TC:78708][TT:11440] [---------QML---------] [NQQmlFileLoader::loadCache] success qmlName[TslHome_1_4_1] [end]
@@ -1193,8 +647,6 @@ I/start   (  871): [TC:78751][TT:11481] [---------QML---------] [NQTextExtend::s
 I/start   (  871): [TC:78752][TT:11481] [---------QML---------] [NQTextExtend::setStyleId] [end]
 I/start   (  871): [TC:78752][TT:11481] [---------QML---------] [NQTextExtend::setStrId] [end]
 I/start   (  871): [TC:78752][TT:11482] [---------QML---------] [NQViewBase::active] [end]
-I/start   (  871): [TC:78753][TT:11482] [TDHome] [CustomKey::setLayout] [setViewPos step]
-I/start   (  871): [TC:78753][TT:11482] [TDHome] [CustomKey::setLayout] [inView step]
 I/start   (  871): [TC:78765][TT:11491] [---------QML---------] [NQViewBase::active] [begin]
 I/start   (  871): [TC:78765][TT:11491] [---------QML---------] [NQViewBase::active] [end]
 I/start   (  871): [TC:78786][TT:11500] [---------QML---------] [NQQmlFileLoader::loadQmlView] id[OffHome_1_2] [begin]
@@ -1210,52 +662,28 @@ I/start   (  871): [TC:78791][TT:11505] [---------QML---------] [NQText::setStrI
 I/start   (  871): [TC:78791][TT:11505] [---------QML---------] [NQTextExtend::setStrId] [end]
 I/start   (  871): [TC:78791][TT:11505] [---------QML---------] [NQViewBase::active] [end]
 I/start   (  871): [TC:78792][TT:11506] [TDHome] [CustomKey::setLayout] [end]
-I/start   (  871): [TC:78793][TT:11506] [TDHome] [HomeControl::onPreActive] [setItemIndexHorizontal step]
 I/start   (  871): [TC:78838][TT:11543] [TDHome] [HomeControl::onPreActive] [end]
 I/start   (  871): [TC:78839][TT:11543] [TDHome] [NativeApp_Home::onAwake] [home onActive begin]
 I/start   (  871): [TC:78854][TT:11555] [TDHome] [NativeApp_Home::onAwake] [end]
 I/start   (  871): [TC:78854][TT:11555] [AppLauncher] [AppContext::onUIInitialize][begin] !!![net.suntec.app.TDHome.application]
 I/start   (  871): [TC:78854][TT:11555] [AppLauncher] [AppContext::onUIInitialize][end] !!![net.suntec.app.TDHome.application]
-I/start   (  149): [TC:78856][TT:40] [AppManager]   receive resp4initAppUIAwake, appid net.suntec.app.TDHome.application
 I/start   (  871): [TC:78856][TT:11555] [AppLauncher] [AppContext::onUIAwake][end] !!![net.suntec.app.TDHome.application]
 I/start   (  871): [TC:78856][TT:11556] [AppLauncher] [AppContext::onUIActiveShow][begin] !!![net.suntec.app.TDSystemUI.application]
 I/start   (  871): [TC:78857][TT:11556] [AppLauncher] [App onIntent][begin] !!![net.suntec.app.TDSystemUI.application]
 I/start   (  871): [TC:78857][TT:11557] [AppLauncher] [App onIntent][end] !!![net.suntec.app.TDSystemUI.application]
-I/start   (  149): [TC:78857][TT:77] [AppManager]   handle resp initui_awake, appid net.suntec.app.TDHome.application
 I/start   (  871): [TC:78857][TT:11557] [AppLauncher] [AppContext::onUIActiveShow][end] !!![net.suntec.app.TDSystemUI.application]
 I/start   (  871): [TC:78866][TT:11565] [statusbar] [NQStatusBar::checkWifiConn()] [check phone connect icon index begin]
-I/start   (  871): [TC:78866][TT:11565] [statusbar] [NQStatusBar::checkWifiConn()] [check phone connect icon index end]
 I/start   (  871): [TC:78866][TT:11565] [statusbar] [NQStatusBar::checkWifiConn()] [get system info fc log begin]
-I/start   (  149): [TC:78868][TT:78] [AppManager]  send req ActiveShow, appid net.suntec.app.TDHome.application
-I/start   (  871): [TC:78880][TT:11568] [statusbar] [NQStatusBar::checkWifiConn()] [get system info fc log end]
-I/start   (  871): [TC:78884][TT:11569] [statusbar] [NQStatusBar::checkWifiConn()] [delete phone con icon display] begin
-I/start   (  871): [TC:78884][TT:11569] [statusbar] [NQStatusBar::checkWifiConn()] [delete phone con icon display] end
 I/start   (  871): [TC:78884][TT:11569] [statusbar] [NQStatusBar::checkPhoneBattery()] [check phone battery icon index begin]
-I/start   (  871): [TC:78884][TT:11569] [statusbar] [NQStatusBar::checkPhoneBattery()] [check phone battery icon index end]
 I/start   (  871): [TC:78885][TT:11569] [statusbar] [NQStatusBar::checkPhoneBattery()] [get system info fc log begin]
-I/start   (  871): [TC:78891][TT:11570] [statusbar] [NQStatusBar::checkPhoneBattery()] [get system info fc log end]
-I/start   (  871): [TC:78895][TT:11571] [statusbar] [NQStatusBar::checkPhoneBattery()] [get phone battery icon display index] begin
-I/start   (  871): [TC:78895][TT:11571] [statusbar] [NQStatusBar::checkPhoneBattery()] [get phone battery icon display index] end
 I/start   (  871): [TC:78895][TT:11572] [statusbar] [NQStatusBar::checkPhoneEFS()] [check phone field icon index begin]
-I/start   (  871): [TC:78895][TT:11572] [statusbar] [NQStatusBar::checkPhoneEFS()] [check phone field icon index end]
 I/start   (  871): [TC:78895][TT:11572] [statusbar] [NQStatusBar::checkPhoneEFS()] [get system info fc log begin]
-I/start   (  871): [TC:78899][TT:11573] [statusbar] [NQStatusBar::checkPhoneEFS()] [get system info fc log end]
-I/start   (  871): [TC:78903][TT:11574] [statusbar] [NQStatusBar::checkPhoneEFS()] [delete phone field icon display] begin
-I/start   (  871): [TC:78903][TT:11574] [statusbar] [NQStatusBar::checkPhoneEFS()] [delete phone field icon display] end
 I/start   (  871): [TC:78903][TT:11574] [statusbar] [NQStatusBar::checkPhoneEFS()] [check phone field icon index begin]
-I/start   (  871): [TC:78903][TT:11574] [statusbar] [NQStatusBar::checkPhoneEFS()] [check phone field icon index end]
 I/start   (  871): [TC:78903][TT:11574] [statusbar] [NQStatusBar::checkPhoneEFS()] [get system info fc log begin]
-I/start   (  871): [TC:78909][TT:11576] [statusbar] [NQStatusBar::checkPhoneEFS()] [get system info fc log end]
-I/start   (  871): [TC:78914][TT:11577] [statusbar] [NQStatusBar::checkPhoneEFS()] [delete phone field icon display] begin
-I/start   (  871): [TC:78914][TT:11577] [statusbar] [NQStatusBar::checkPhoneEFS()] [delete phone field icon display] end
 I/start   (  871): [TC:78916][TT:11579] [PhoneHome_1_4] [PhoneHome_1_4 Screen::setButtonBtnEnabled] [begin]
 I/start   (  871): [TC:78921][TT:11582] [PhoneHome_1_4] [PhoneHome_1_4 Screen::setButtonBtnEnabled] [end]
-I/start   (  871): [TC:78925][TT:11585] [TDSystemUI] [Caution Screen::onFrameConfirmedSlot()] [property_set(plcaution)] [start]
 I/start   (  871): [TC:78929][TT:11588] [TDSystemUI] [Caution Screen::onFrameConfirmedSlot()] [property_set(plcaution)] [end]
 I/start   (  871): [TC:78929][TT:11588] [TDSystemUI] [Caution Screen::onFrameConfirmedSlot()] [end]
-I/start   (  147): [TC:78930][TT:303] [OpeningService] 10682 : correct time
-I/start   (  147): [TC:78930][TT:303] [OpeningService] OpeningThreadJobAnimationFadeOut Start
-I/start   (  147): [TC:78930][TT:303] [OpeningService] OpeningAnimationImpl::openingPlayAnimation start
 I/start   (  871): [TC:78946][TT:11589] [---------QML---------] [NQGuiApplication::notify] [triggerUpdateEvent] [begin]
 I/start   (  871): [TC:78948][TT:11590] [---------QML---------] [NQTextExtend::changeFont] [begin]
 I/start   (  871): [TC:79006][TT:11645] [---------QML---------] [NQText::setFont] [begin]
@@ -1397,11 +825,6 @@ I/start   (  871): [TC:79100][TT:11721] [---------QML---------] [NQImage::update
 I/start   (  871): [TC:79100][TT:11721] [---------QML---------] [NQImage::updatePaintNode] visible is false [end]
 I/start   (  871): [TC:79100][TT:11721] [---------QML---------] [NQImage::updatePaintNode] [begin]
 I/start   (  871): [TC:79100][TT:11721] [---------QML---------] [NQImage::updatePaintNode] [end]
-I/start   (  147): [TC:79253][TT:370] [OpeningService] OpeningAnimationImpl::openingPlayAnimation end
-I/start   (  147): [TC:79253][TT:370] [OpeningService] OpeningThreadJobAnimationFadeOut End
-I/start   (  147): [TC:79256][TT:625] [OpeningService] 11008 : correct time
-I/start   (  147): [TC:79256][TT:625] [OpeningService] opening process end
-I/start   (  147): [TC:79257][TT:625] [OpeningService] *****movie stop start
 I/start   (  871): [TC:79368][TT:11907] [---------QML---------] [NQPngTexture::bind] [begin]
 I/start   (  871): [TC:79368][TT:11907] [---------QML---------] [NQPngTexture::bind] rebound ok [end]
 I/start   (  871): [TC:79368][TT:11907] [---------QML---------] [NQPngTexture::bind] [begin]
@@ -1411,18 +834,6 @@ I/start   (  871): [TC:79369][TT:11907] [---------QML---------] [NQPngTexture::b
 I/start   (  871): [TC:79369][TT:11908] [---------QML---------] [NQPngTexture::bind] [begin]
 I/start   (  871): [TC:79369][TT:11908] [---------QML---------] [NQPngTexture::bind] rebound ok [end]
 I/start   (  871): [TC:79369][TT:11908] [---------QML---------] [NQPngTexture::bind] [begin]
-I/start   (  147): [TC:79388][TT:640] [OpeningPlayer] now stopped
-I/start   (  147): [TC:79388][TT:640] [OpeningService] OpeningMoviePlayer::play stop
-I/start   (  147): [TC:79388][TT:640] [OpeningService] *****movie stop end
-I/start   (  147): [TC:79388][TT:640] [OpeningService] *****movie unload start
-I/start   (  147): [TC:79466][TT:652] [OpeningPlayer] now unloaded
-I/start   (  147): [TC:79477][TT:662] [OpeningService] OpeningMoviePlayer::play unload
-I/start   (  147): [TC:79477][TT:662] [OpeningService] *****movie unload end
-I/start   (  147): [TC:79477][TT:662] [OpeningService] 11229 : correct time
-I/start   (  147): [TC:79479][TT:662] [OpeningService] notifyPowerPort | notify PowerProcess_Awaking OK
-I/start   (  147): [TC:79479][TT:662] [OpeningService] 11231 : correct time
-I/start   (  147): [TC:79479][TT:662] [OpeningService] onDeinit
-I/start   (  147): [TC:79482][TT:663] [OpeningService] MainEnd
 I/start   (  871): [TC:79495][TT:11983] [---------QML---------] [NQPngTexture::bind] [end]
 I/start   (  871): [TC:79512][TT:11997] [---------QML---------] [NQPngTexture::bind] [begin]
 I/start   (  871): [TC:79514][TT:11998] [---------QML---------] [NQPngTexture::bind] [end]
@@ -1447,9 +858,6 @@ I/start   (  871): [TC:80249][TT:12078] [AppLauncher] [AppContext::onUIActiveSho
 I/start   (  871): [TC:80250][TT:12078] [AppLauncher] [App onIntent][begin] !!![net.suntec.app.TDHome.application]
 I/start   (  871): [TC:80250][TT:12078] [TDHome] [NativeApp_Home::onIntent] [begin]
 I/start   (  871): [TC:80250][TT:12078] [TDHome] [NativeApp_Home::onIntent] [readBool begin]
-I/start   (  871): [TC:80250][TT:12078] [TDHome] [NativeApp_Home::onIntent] [readBool end]
-I/start   (  871): [TC:80255][TT:12079] [TDHome] [NativeApp_Home::onIntent] [isFirstAwake]
-I/start   (  871): [TC:80257][TT:12080] [TDHome] [NativeApp_Home::onIntent] [.skipplcaution is NULL]
 I/start   (  871): [TC:80257][TT:12080] [TDHome] [NativeApp_Home::onIntent] [end]
 I/start   (  871): [TC:80257][TT:12080] [AppLauncher] [App onIntent][end] !!![net.suntec.app.TDHome.application]
 I/start   (  871): [TC:80260][TT:12082] [AppLauncher] [AppContext::onUIActiveShow][end] !!![net.suntec.app.TDHome.application]
@@ -1487,10 +895,6 @@ I/start   (  871): [TC:80422][TT:12209] [---------QML---------] [NQPngTexture::b
 I/start   (  871): [TC:80424][TT:12211] [---------QML---------] [QGuiApplication::notify] [end]
 I/start   (  871): [TC:80424][TT:12212] [AppLauncher] [AppContext::onFrameConfirmed][begin] !!!
 I/start   (  871): [TC:80425][TT:12212] [AppLauncher] [AppContext::onFrameConfirmed][end] !!!
-I/start   (  149): [TC:80429][TT:41] [AppManager]   receive resp4activeShowApp, appid net.suntec.app.TDSystemUI.application
-I/start   (  149): [TC:80429][TT:79] [AppManager]   handle resp activeshow, appid net.suntec.app.TDSystemUI.application
-I/start   (  149): [TC:80438][TT:81] [AppManager]  send finished request, appid net.suntec.app.TDSystemUI.application
-I/start   (  149): [TC:80439][TT:81] [AppManager] systemui has launched
 I/start   (  871): [TC:80442][TT:12223] [PhoneHome_1_4] [PhoneHome_1_4 Screen:: notify [FC_BT_PHONEBOOK_RES_WIDGET_INFO] [begin]
 I/start   (  871): [TC:80452][TT:12232] [---------QML---------] [NQTextExtend::setStyleId] [begin]
 I/start   (  871): [TC:80456][TT:12234] [---------QML---------] [NQTextExtend::initText] [begin]
@@ -1504,11 +908,9 @@ I/start   (  871): [TC:80458][TT:12236] [---------QML---------] [NQTextExtend::i
 I/start   (  871): [TC:80458][TT:12236] [---------QML---------] [NQTextExtend::setStyleId] [end]
 I/start   (  871): [TC:80463][TT:12240] [---------QML---------] [NQTextExtend::setStrId] [begin]
 I/start   (  871): [TC:80463][TT:12240] [---------QML---------] [NQText::setStrId] strId[STR_MM_10_01_28_RES_00] [begin]
-I/start   (  871): [TC:80469][TT:12246] [---------QML---------] [NQTextExtend::notifyTextChanged] text[Press & Hold to
 I/start   (  871): Select Contact] [begin]
 I/start   (  871): [TC:80470][TT:12246] [---------QML---------] [NQTextExtend::recalcSearchText] [begin]
 I/start   (  871): [TC:80470][TT:12246] [---------QML---------] [NQTextExtend::recalcSearchText] [end]
-I/start   (  871): [TC:80470][TT:12247] [---------QML---------] [NQTextExtend::notifyTextChanged] text[Press & Hold to
 I/start   (  871): Select Contact] [end]
 I/start   (  871): [TC:80470][TT:12247] [---------QML---------] [NQText::setStrId] strId[STR_MM_10_01_28_RES_00] [end]
 I/start   (  871): [TC:80470][TT:12247] [---------QML---------] [NQTextExtend::setStrId] [end]
@@ -1528,11 +930,9 @@ I/start   (  871): [TC:80491][TT:12266] [---------QML---------] [NQTextExtend::i
 I/start   (  871): [TC:80491][TT:12266] [---------QML---------] [NQTextExtend::setStyleId] [end]
 I/start   (  871): [TC:80491][TT:12266] [---------QML---------] [NQTextExtend::setStrId] [begin]
 I/start   (  871): [TC:80491][TT:12266] [---------QML---------] [NQText::setStrId] strId[STR_MM_10_01_28_RES_00] [begin]
-I/start   (  871): [TC:80492][TT:12267] [---------QML---------] [NQTextExtend::notifyTextChanged] text[Press & Hold to
 I/start   (  871): Select Contact] [begin]
 I/start   (  871): [TC:80492][TT:12267] [---------QML---------] [NQTextExtend::recalcSearchText] [begin]
 I/start   (  871): [TC:80492][TT:12267] [---------QML---------] [NQTextExtend::recalcSearchText] [end]
-I/start   (  871): [TC:80492][TT:12267] [---------QML---------] [NQTextExtend::notifyTextChanged] text[Press & Hold to
 I/start   (  871): Select Contact] [end]
 I/start   (  871): [TC:80492][TT:12267] [---------QML---------] [NQText::setStrId] strId[STR_MM_10_01_28_RES_00] [end]
 I/start   (  871): [TC:80492][TT:12267] [---------QML---------] [NQTextExtend::setStrId] [end]
@@ -1552,11 +952,9 @@ I/start   (  871): [TC:80494][TT:12269] [---------QML---------] [NQTextExtend::i
 I/start   (  871): [TC:80494][TT:12269] [---------QML---------] [NQTextExtend::setStyleId] [end]
 I/start   (  871): [TC:80494][TT:12269] [---------QML---------] [NQTextExtend::setStrId] [begin]
 I/start   (  871): [TC:80494][TT:12269] [---------QML---------] [NQText::setStrId] strId[STR_MM_10_01_28_RES_00] [begin]
-I/start   (  871): [TC:80495][TT:12270] [---------QML---------] [NQTextExtend::notifyTextChanged] text[Press & Hold to
 I/start   (  871): Select Contact] [begin]
 I/start   (  871): [TC:80495][TT:12270] [---------QML---------] [NQTextExtend::recalcSearchText] [begin]
 I/start   (  871): [TC:80495][TT:12270] [---------QML---------] [NQTextExtend::recalcSearchText] [end]
-I/start   (  871): [TC:80495][TT:12270] [---------QML---------] [NQTextExtend::notifyTextChanged] text[Press & Hold to
 I/start   (  871): Select Contact] [end]
 I/start   (  871): [TC:80495][TT:12270] [---------QML---------] [NQText::setStrId] strId[STR_MM_10_01_28_RES_00] [end]
 I/start   (  871): [TC:80496][TT:12270] [---------QML---------] [NQTextExtend::setStrId] [end]
@@ -1576,11 +974,9 @@ I/start   (  871): [TC:80497][TT:12271] [---------QML---------] [NQTextExtend::i
 I/start   (  871): [TC:80497][TT:12271] [---------QML---------] [NQTextExtend::setStyleId] [end]
 I/start   (  871): [TC:80497][TT:12271] [---------QML---------] [NQTextExtend::setStrId] [begin]
 I/start   (  871): [TC:80497][TT:12272] [---------QML---------] [NQText::setStrId] strId[STR_MM_10_01_28_RES_00] [begin]
-I/start   (  871): [TC:80498][TT:12272] [---------QML---------] [NQTextExtend::notifyTextChanged] text[Press & Hold to
 I/start   (  871): Select Contact] [begin]
 I/start   (  871): [TC:80498][TT:12273] [---------QML---------] [NQTextExtend::recalcSearchText] [begin]
 I/start   (  871): [TC:80498][TT:12273] [---------QML---------] [NQTextExtend::recalcSearchText] [end]
-I/start   (  871): [TC:80498][TT:12273] [---------QML---------] [NQTextExtend::notifyTextChanged] text[Press & Hold to
 I/start   (  871): Select Contact] [end]
 I/start   (  871): [TC:80498][TT:12273] [---------QML---------] [NQText::setStrId] strId[STR_MM_10_01_28_RES_00] [end]
 I/start   (  871): [TC:80498][TT:12273] [---------QML---------] [NQTextExtend::setStrId] [end]
@@ -1630,120 +1026,29 @@ I/start   (  871): [TC:80507][TT:12280] [---------QML---------] [NQPngTexture::b
 I/start   (  871): [TC:80512][TT:12283] [---------QML---------] [QGuiApplication::notify] [end]
 I/start   (  871): [TC:80512][TT:12283] [AppLauncher] [AppContext::onFrameConfirmed][begin] !!!
 I/start   (  871): [TC:80514][TT:12283] [AppLauncher] [AppContext::onFrameConfirmed][end] !!!
-I/start   (  149): [TC:80514][TT:41] [AppManager]   receive resp4activeShowApp, appid net.suntec.app.TDHome.application
-I/start   (  149): [TC:80515][TT:81] [AppManager]   handle resp activeshow, appid net.suntec.app.TDHome.application
-I/start   (  149): [TC:80520][TT:82] [AppManager]  send finished request, appid net.suntec.app.TDHome.application
-I/start   (  225): [TC:80522][TT:0] [LastRestore] receive last mode started!
-I/start   (  225): [TC:80522][TT:0] [AppControl] trigger_lastmode_started int startup control
-I/start   (  149): [TC:80531][TT:3] [AppManager]   receive broadcast, appid nutshell.intent.br.LASTMODE_TRIGGERED
-I/start   (  149): [TC:80531][TT:3] [AppManager] The first app has launched ()
-I/start   (  149): [TC:80531][TT:3] [AppManager] awake forkwindowserver
-I/start   (  149): [TC:80531][TT:3] [AppManager] awake all hibernate task.
-I/start   (  149): [TC:80531][TT:3] [AppManager] send broadcast of bootcomplete
-I/start   (  149): [TC:80531][TT:3] [AppManager]   receive broadcast, appid nutshell.intent.br.BOOT_COMPLETED
-I/start   (  149): [TC:80538][TT:83] [AppManager]   handle request startApplication, appid net.suntec.app.TDHome.application
-I/start   (  149): [TC:80539][TT:83] [AppManager]  send finished request, appid net.suntec.app.TDHome.application
-I/start   (  149): [TC:80539][TT:83] [AppManager]   handle request startApplication, appid net.suntec.app.AV.application
-I/start   (  149): [TC:80539][TT:84] [AppManager]  send req InitUI Awake, appid net.suntec.app.AV.application
-I/start   (  149): [TC:80540][TT:84] [AppManager]   handle request startApplication, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:80540][TT:84] [AppManager]  send req InitUI Awake, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:80541][TT:85] [AppManager]   handle request startApplication, appid net.suntec.app.Info.application
-I/start   (  149): [TC:80541][TT:85] [AppManager]  send req InitUI Awake, appid net.suntec.app.Info.application
-I/start   (  149): [TC:80557][TT:86] [AppManager]   handle request startApplication, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:80560][TT:87] [AppManager]  send req InitUI Awake, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:80565][TT:88] [AppManager]   handle request startApplication, appid net.suntec.app.VR.application
-I/start   (  149): [TC:80566][TT:88] [AppManager]  send req InitUI Awake, appid net.suntec.app.VR.application
-I/start   (  149): [TC:80577][TT:89] [AppManager]   handle request startApplication, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:80577][TT:90] [AppManager]  send req InitUI Awake, appid net.suntec.app.Apps.application
 I/start   (  871): [TC:80584][TT:12285] [AppLauncher] [AppContext::onUIAwake][begin] !!![net.suntec.app.AV.application]
-I/start   (  149): [TC:80592][TT:0] [AppManager]  recv  forked/AWS/2033#, appid 
 I/start   (  871): [TC:80598][TT:12296] [FCBase] [fnctl.system.alert onAwake] [begin]
 I/start   (  871): [TC:80598][TT:12297] [FCBase] [fnctl.system.alert onAwake] [end]
 I/start   (  871): [TC:80600][TT:12299] [FCBase] [fnctl.media.aux onAwake] [begin]
 I/start   (  871): [TC:80600][TT:12299] [FCBase] [fnctl.media.aux onAwake] [end]
 I/start   (  871): [TC:80612][TT:12305] [FCBase] [fnctl.voice.voicerecog onAwake] [begin]
 I/start   (  871): [TC:80614][TT:12307] [FCBase] [fnctl.voice.voicerecog onAwake] [end]
-I/start   (  149): [TC:80633][TT:5] [AppManager]   receive launchAppService, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:80635][TT:6] [AppManager]   receive launchAppService, appid net.suntec.app.AV.application
-I/start   (  149): [TC:80637][TT:7] [AppManager]   receive launchAppService, appid net.suntec.app.Info.application
-I/start   (  149): [TC:80639][TT:9] [AppManager]   receive launchAppService, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:80641][TT:10] [AppManager]   receive launchAppService, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:80644][TT:12] [AppManager]   receive launchAppService, appid net.suntec.app.VR.application
-I/start   (  225): [TC:80699][TT:4] [LastRestore] set property appmgr.lazystart finished!
-I/start   (  206): [TC:80772][TT:2] [NCDIAGService] NCDIAG_InitProcess::startServiceAndFileRelatedReq Start
-I/start   (  146): [TC:80777][TT:198] [ServiceManager] askStartService [nutshell.media.ipod:2]
-I/start   (  190): [TC:80784][TT:309] [Service] Before onAwake [nutshell.media.ipod]
-I/start   (  146): [TC:80814][TT:198] [ServiceManager] askStartService [nutshell.media.disc:2]
-I/start   (  146): [TC:80815][TT:199] [ServiceManager] askStartService [nutshell.media.tuner:2]
-I/start   (  187): [TC:80820][TT:278] [Service] Before onAwake [nutshell.media.tuner]
-I/start   (  166): [TC:80823][TT:286] [Service] Before onAwake [nutshell.media.disc]
-I/start   (  163): [TC:80829][TT:11] [mediamanager] Disc
-I/start   (  146): [TC:80841][TT:199] [ServiceManager] askStartService [nutshell.media.mediaplayer:0]
-I/start   (  166): [TC:80941][TT:298] [Service] After onAwake [nutshell.media.disc]
-I/start   (  166): [TC:80950][TT:300] [Service] notify status ready [nutshell.media.disc]
-I/start   (  146): [TC:81021][TT:20] [ServiceManager] ServiceStatusChanged [nutshell.media.disc:3]
-I/start   (  190): [TC:81041][TT:357] [Service] After onAwake [nutshell.media.ipod]
-I/start   (  190): [TC:81044][TT:358] [Service] notify status ready [nutshell.media.ipod]
-I/start   (  146): [TC:81044][TT:19] [ServiceManager] ServiceStatusChanged [nutshell.media.ipod:3]
-I/start   (  146): [TC:81064][TT:201] [ServiceManager] askStartService [nutshell.media.audioservice:0]
-I/start   (  146): [TC:81086][TT:202] [ServiceManager] askStartService [nutshell.media.btaudio:2]
-I/start   (  192): [TC:81091][TT:286] [Service] Before onAwake [nutshell.media.btaudio]
-I/start   (  146): [TC:81093][TT:202] [ServiceManager] askStartService [nutshell.media.usbsd:2]
-I/start   (  189): [TC:81098][TT:344] [Service] Before onAwake [nutshell.media.usbsd]
-I/start   (  146): [TC:81101][TT:202] [ServiceManager] askStartService [nutshell.media.aux:2]
-I/start   (  163): [TC:81103][TT:11] [mediamanager] Radio
-I/start   (  163): [TC:81104][TT:11] [mediamanager] Ipod
-I/start   (  146): [TC:81104][TT:203] [ServiceManager] askStartService [nutshell.media.rse:2]
-I/start   (  204): [TC:81111][TT:109] [Service] Before onAwake [nutshell.media.rse]
-I/start   (  146): [TC:81115][TT:203] [ServiceManager] askStartService [nutshell.media.tsl:2]
-I/start   (  146): [TC:81117][TT:205] [ServiceManager] askStartService [nutshell.media.iapservice:0]
-I/start   (  205): [TC:81123][TT:252] [Service] Before onAwake [nutshell.media.tsl]
-I/start   (  191): [TC:81136][TT:114] [Service] Before onAwake [nutshell.media.aux]
-I/start   (  191): [TC:81152][TT:116] [Service] After onAwake [nutshell.media.aux]
-I/start   (  163): [TC:81160][TT:11] [mediamanager] BTA
-I/start   (  163): [TC:81160][TT:12] [mediamanager] AUX
-I/start   (  191): [TC:81165][TT:121] [Service] notify status ready [nutshell.media.aux]
-I/start   (  192): [TC:81170][TT:290] [Service] After onAwake [nutshell.media.btaudio]
-I/start   (  192): [TC:81176][TT:296] [Service] notify status ready [nutshell.media.btaudio]
-I/start   (  163): [TC:81205][TT:12] [mediamanager] RSE
-I/start   (  204): [TC:81236][TT:122] [Service] After onAwake [nutshell.media.rse]
-I/start   (  146): [TC:81274][TT:19] [ServiceManager] ServiceStatusChanged [nutshell.media.btaudio:3]
-I/start   (  146): [TC:81342][TT:21] [ServiceManager] ServiceStatusChanged [nutshell.media.aux:3]
-I/start   (  204): [TC:81387][TT:130] [Service] notify status ready [nutshell.media.rse]
-I/start   (  146): [TC:81431][TT:19] [ServiceManager] ServiceStatusChanged [nutshell.media.rse:3]
-I/start   (  163): [TC:81525][TT:13] [mediamanager] USB
 I/start   (  871): [TC:81536][TT:12574] [AppLauncher] [AppContext::onUIInitialize][begin] !!![net.suntec.app.AV.application]
 I/start   (  871): [TC:81537][TT:12574] [AppLauncher] [AppContext::onUIInitialize][end] !!![net.suntec.app.AV.application]
 I/start   (  871): [TC:81537][TT:12574] [AppLauncher] [AppContext::onUIAwake][end] !!![net.suntec.app.AV.application]
 I/start   (  871): [TC:81537][TT:12574] [AppLauncher] [AppContext::onUIAwake][begin] !!![net.suntec.app.Phone.application]
-I/start   (  149): [TC:81539][TT:42] [AppManager]   receive resp4initAppUIAwake, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81539][TT:90] [AppManager]   handle resp initui_awake, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81540][TT:91] [AppManager]  send finished request, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81542][TT:92] [AppManager]   handle request launchAppService, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81542][TT:92] [AppManager]  send req StartAppService, appid net.suntec.app.AV.application
 I/start   (  871): [TC:81546][TT:12576] [AppLauncher] [AppContext::onUIInitialize][begin] !!![net.suntec.app.Phone.application]
 I/start   (  871): [TC:81546][TT:12576] [AppLauncher] [AppContext::onUIInitialize][end] !!![net.suntec.app.Phone.application]
 I/start   (  871): [TC:81546][TT:12577] [AppLauncher] [AppContext::onUIAwake][end] !!![net.suntec.app.Phone.application]
 I/start   (  871): [TC:81547][TT:12577] [AppLauncher] [AppContext::onUIAwake][begin] !!![net.suntec.app.Info.application]
-I/start   (  149): [TC:81549][TT:42] [AppManager]   receive resp4initAppUIAwake, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81549][TT:92] [AppManager]   handle resp initui_awake, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81550][TT:93] [AppManager]  send finished request, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81556][TT:94] [AppManager]   handle request launchAppService, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81557][TT:94] [AppManager]  send req StartAppService, appid net.suntec.app.Phone.application
 I/start   (  871): [TC:81560][TT:12579] [AppLauncher] [AppContext::onUIInitialize][begin] !!![net.suntec.app.Info.application]
 I/start   (  871): [TC:81561][TT:12579] [AppLauncher] [AppContext::onUIInitialize][end] !!![net.suntec.app.Info.application]
 I/start   (  871): [TC:81561][TT:12579] [AppLauncher] [AppContext::onUIAwake][end] !!![net.suntec.app.Info.application]
 I/start   (  871): [TC:81561][TT:12579] [AppLauncher] [AppContext::onUIAwake][begin] !!![net.suntec.app.Setup.application]
-I/start   (  149): [TC:81564][TT:43] [AppManager]   receive resp4initAppUIAwake, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81564][TT:95] [AppManager]   handle resp initui_awake, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81565][TT:96] [AppManager]  send finished request, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81567][TT:96] [AppManager]   handle request launchAppService, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81567][TT:97] [AppManager]  send req StartAppService, appid net.suntec.app.Info.application
 I/start   (  871): [TC:81573][TT:12583] [FCBase] [fnctl.csr onAwake] [begin]
 I/start   (  871): [TC:81573][TT:12583] [FCBase] [fnctl.csr onAwake] [end]
 I/start   (  871): [TC:81575][TT:12585] [FCBase] [fnctl.vehicle.customize onAwake] [begin]
 I/start   (  871): [TC:81575][TT:12586] [FCBase] [fnctl.vehicle.customize onAwake] [end]
-I/start   (  189): [TC:81577][TT:410] [Service] After onAwake [nutshell.media.usbsd]
 I/start   (  871): [TC:81579][TT:12588] [FCBase] [fnctl.vehicle.dms onAwake] [begin]
 I/start   (  871): [TC:81580][TT:12589] [FCBase] [fnctl.vehicle.dms onAwake] [end]
 I/start   (  871): [TC:81583][TT:12592] [FCBase] [fnctl.diag.sysdiag onAwake] [begin]
@@ -1754,136 +1059,28 @@ I/start   (  871): [TC:81599][TT:12604] [FCBase] [fnctl.update.repro onAwake] [b
 I/start   (  871): [TC:81600][TT:12606] [FCBase] [fnctl.update.repro onAwake] [end]
 I/start   (  871): [TC:81610][TT:12613] [AppLauncher] [AppContext::onUIInitialize][begin] !!![net.suntec.app.Setup.application]
 I/start   (  871): [TC:81610][TT:12613] [AppLauncher] [AppContext::onUIInitialize][end] !!![net.suntec.app.Setup.application]
-I/start   (  149): [TC:81612][TT:43] [AppManager]   receive resp4initAppUIAwake, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81613][TT:97] [AppManager]   handle resp initui_awake, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81614][TT:98] [AppManager]  send finished request, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81616][TT:98] [AppManager]   handle request launchAppService, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81616][TT:99] [AppManager]  send req StartAppService, appid net.suntec.app.Setup.application
 I/start   (  871): [TC:81622][TT:12613] [AppLauncher] [AppContext::onUIAwake][end] !!![net.suntec.app.Setup.application]
 I/start   (  871): [TC:81622][TT:12613] [AppLauncher] [AppContext::onUIAwake][begin] !!![net.suntec.app.VR.application]
 I/start   (  871): [TC:81622][TT:12613] [AppLauncher] [AppContext::onUIInitialize][begin] !!![net.suntec.app.VR.application]
 I/start   (  871): [TC:81622][TT:12613] [AppLauncher] [AppContext::onUIInitialize][end] !!![net.suntec.app.VR.application]
-I/start   (  149): [TC:81625][TT:44] [AppManager]   receive resp4initAppUIAwake, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81626][TT:100] [AppManager]   handle resp initui_awake, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81627][TT:101] [AppManager]  send finished request, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81629][TT:101] [AppManager]   handle request launchAppService, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81629][TT:101] [AppManager]  send req StartAppService, appid net.suntec.app.VR.application
 I/start   (  871): [TC:81638][TT:12614] [AppLauncher] [AppContext::onUIAwake][end] !!![net.suntec.app.VR.application]
 I/start   (  871): [TC:81639][TT:12614] [AppLauncher] [AppContext::onUIAwake][begin] !!![net.suntec.app.Apps.application]
-I/start   (  189): [TC:81655][TT:413] [Service] notify status ready [nutshell.media.usbsd]
 I/start   (  871): [TC:81661][TT:12621] [AppLauncher] [AppContext::onUIInitialize][begin] !!![net.suntec.app.Apps.application]
 I/start   (  871): [TC:81661][TT:12621] [AppLauncher] [AppContext::onUIInitialize][end] !!![net.suntec.app.Apps.application]
-I/start   (  149): [TC:81663][TT:44] [AppManager]   receive resp4initAppUIAwake, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81664][TT:102] [AppManager]   handle resp initui_awake, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81665][TT:103] [AppManager]  send finished request, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81665][TT:103] [AppManager] send broadcast to app for notify awake finished
-I/start   (  871): [TC:81669][TT:4] [AppManager] App Reciver AwakeFinished, set UI pri -4
-I/start   (  149): [TC:81671][TT:103] [AppManager]   handle request launchAppService, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81673][TT:104] [AppManager]  send req StartAppService, appid net.suntec.app.Apps.application
 I/start   (  871): [TC:81677][TT:12622] [AppLauncher] [AppContext::onUIAwake][end] !!![net.suntec.app.Apps.application]
-I/start   (  163): [TC:81679][TT:13] [mediamanager] Apps
-I/start   (  149): [TC:81684][TT:45] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81685][TT:104] [AppManager]   handle resp startservice, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81686][TT:105] [AppManager]  send finished request, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81687][TT:105] [AppManager]   handle request launchAppService, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81687][TT:106] [AppManager]  send req StartAppService, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81698][TT:46] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81698][TT:106] [AppManager]   handle resp startservice, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81700][TT:107] [AppManager]  send finished request, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81701][TT:107] [AppManager]   handle request launchAppService, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81702][TT:108] [AppManager]  send req StartAppService, appid net.suntec.app.Phone.application
-I/start   (  146): [TC:81734][TT:20] [ServiceManager] ServiceStatusChanged [nutshell.media.usbsd:3]
-I/start   (  149): [TC:81764][TT:46] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81777][TT:109] [AppManager]   handle resp startservice, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81779][TT:110] [AppManager]  send finished request, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81779][TT:110] [AppManager]   handle request launchAppService, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81780][TT:110] [AppManager]  send req StartAppService, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81799][TT:47] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81802][TT:111] [AppManager]   handle resp startservice, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81804][TT:112] [AppManager]  send finished request, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81805][TT:112] [AppManager]   handle request launchAppService, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81805][TT:113] [AppManager]  send req StartAppService, appid net.suntec.app.Setup.application
-I/start   (  150): [TC:81887][TT:5] [PowerManager] call PnpHandler doColdBoot succeed.
-I/start   (  149): [TC:81893][TT:47] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81893][TT:113] [AppManager]   handle resp startservice, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81894][TT:114] [AppManager]  send finished request, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81897][TT:115] [AppManager]   handle request launchAppService, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81897][TT:115] [AppManager]  send req StartAppService, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81904][TT:48] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81905][TT:115] [AppManager]   handle resp startservice, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81908][TT:117] [AppManager]  send finished request, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81908][TT:117] [AppManager]   handle request launchAppService, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81910][TT:118] [AppManager]  send req StartAppService, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81921][TT:49] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81922][TT:118] [AppManager]   handle resp startservice, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81923][TT:119] [AppManager]  send finished request, appid net.suntec.app.AV.application
-I/start   (  149): [TC:81928][TT:49] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81930][TT:120] [AppManager]   handle resp startservice, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81931][TT:121] [AppManager]  send finished request, appid net.suntec.app.Phone.application
-I/start   (  149): [TC:81935][TT:50] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81936][TT:121] [AppManager]   handle resp startservice, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81937][TT:122] [AppManager]  send finished request, appid net.suntec.app.Info.application
-I/start   (  149): [TC:81942][TT:51] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81943][TT:123] [AppManager]   handle resp startservice, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81944][TT:123] [AppManager]  send finished request, appid net.suntec.app.Setup.application
-I/start   (  149): [TC:81947][TT:52] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81947][TT:124] [AppManager]   handle resp startservice, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81948][TT:124] [AppManager]  send finished request, appid net.suntec.app.VR.application
-I/start   (  149): [TC:81952][TT:52] [AppManager]   receive resp4serviceLaunched, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81952][TT:125] [AppManager]   handle resp startservice, appid net.suntec.app.Apps.application
-I/start   (  149): [TC:81953][TT:125] [AppManager]  send finished request, appid net.suntec.app.Apps.application
-I/start   (  150): [TC:81889][TT:7] [PowerManager] Start other lazy services after first App ready. [21]
-I/start   (  146): [TC:82058][TT:209] [ServiceManager] askStartService [nutshell.renewal.sysupdate:2]
-I/start   (  146): [TC:82058][TT:209] [ServiceManager] askStartService [nutshell.vehicle.meter:2]
-I/start   (  146): [TC:82058][TT:209] [ServiceManager] askStartService [nutshell.commu.telephony:2]
-I/start   (  146): [TC:82058][TT:209] [ServiceManager] askStartService [nutshell.voice.tts:2]
-I/start   (  146): [TC:82058][TT:209] [ServiceManager] askStartService [nutshell.voice.voicerecognizer:2]
-I/start   (  146): [TC:82058][TT:209] [ServiceManager] askStartService [nutshell.picturechange.picturechange:2]
-I/start   (  227): [TC:82072][TT:257] [Service] Before onAwake [nutshell.voice.tts]
-I/start   (  230): [TC:82078][TT:94] [Service] Before onAwake [nutshell.renewal.sysupdate]
-I/start   (  225): [TC:82084][TT:607] [Service] Before onAwake [nutshell.picturechange.picturechange]
-I/start   (  225): [TC:82085][TT:608] [Service] After onAwake [nutshell.picturechange.picturechange]
-I/start   (  226): [TC:82085][TT:444] [Service] Before onAwake [nutshell.commu.telephony]
-I/start   (  226): [TC:82085][TT:444] [Service] After onAwake [nutshell.commu.telephony]
-I/start   (  226): [TC:82086][TT:444] [Service] notify status ready [nutshell.commu.telephony]
-I/start   (  227): [TC:82087][TT:264] [nutshell.voice.tts] nutshell.voice.tts[onAwake]
-I/start   (  220): [TC:82088][TT:70] [Service] Before onAwake [nutshell.vehicle.meter]
-I/start   (  225): [TC:82092][TT:609] [Service] notify status ready [nutshell.picturechange.picturechange]
-I/start   (  146): [TC:82092][TT:20] [ServiceManager] ServiceStatusChanged [nutshell.commu.telephony:3]
-I/start   (  146): [TC:82093][TT:22] [ServiceManager] ServiceStatusChanged [nutshell.picturechange.picturechange:3]
-I/start   (  227): [TC:82130][TT:301] [Service] After onAwake [nutshell.voice.tts]
-I/start   (  227): [TC:82161][TT:327] [Service] notify status ready [nutshell.voice.tts]
-I/start   (  227): [TC:82139][TT:5] [TTS] [TTS]:Recieve onawake start
-I/start   (  146): [TC:82198][TT:20] [ServiceManager] ServiceStatusChanged [nutshell.voice.tts:3]
 I/start   (  871): [TC:82237][TT:12727] [statusbar] [NQStatusBar::checkTSL()] [check tsl icon index begin]
-I/start   (  871): [TC:82237][TT:12727] [statusbar] [NQStatusBar::checkTSL()] [check tsl icon index end]
 I/start   (  871): [TC:82237][TT:12727] [statusbar] [NQStatusBar::checkTSL()] [get product country (getUICFunc isSupportTsl) begin]
-I/start   (  871): [TC:82237][TT:12727] [statusbar] [NQStatusBar::checkTSL()] [get product country (getUICFunc isSupportTsl) end]
 I/start   (  871): [TC:82237][TT:12728] [statusbar] [NQStatusBar::checkTSL()] [get system info tsl status begin]
-I/start   (  871): [TC:82237][TT:12728] [statusbar] [NQStatusBar::checkTSL()] [get system info tsl status end]
 I/start   (  871): [TC:82237][TT:12728] [statusbar] [NQStatusBar::checkTSL()] [get tsl connect type begin]
-I/start   (  871): [TC:82237][TT:12728] [statusbar] [NQStatusBar::checkTSL()] [get tsl connect type end]
 I/start   (  871): [TC:82237][TT:12728] [statusbar] [NQStatusBar::checkTSL()] [get tsl app list transfer type begin]
-I/start   (  871): [TC:82237][TT:12728] [statusbar] [NQStatusBar::checkTSL()] [get tsl app list transfer type end]
 I/start   (  871): [TC:82238][TT:12729] [statusbar] [NQStatusBar::checkTSL()] [show tsl mark begin]
 I/start   (  871): [TC:82238][TT:12729] [statusbar] [NQStatusBar::checkTSL()] [get tsl icon position begin]
-I/start   (  871): [TC:82238][TT:12729] [statusbar] [NQStatusBar::checkTSL()] [get tsl icon position end]
-I/start   (  230): [TC:82262][TT:97] [NCUpdateService] NCUpdateService::onAwake
-I/start   (  187): [TC:82350][TT:354] [Service] After onAwake [nutshell.media.tuner]
-I/start   (  871): [TC:82374][TT:12747] [statusbar] [NQStatusBar::checkTSL()] [delete tsl button update position]
-I/start   (  187): [TC:82487][TT:355] [Service] notify status ready [nutshell.media.tuner]
-I/start   (  146): [TC:82597][TT:21] [ServiceManager] ServiceStatusChanged [nutshell.media.tuner:3]
 I/start   (  871): [TC:82777][TT:12785] [---------QML---------] [NQImageBase::setImage] imgId[] [begin]
 I/start   (  871): [TC:82779][TT:12786] [---------QML---------] [NQImageBase::setImage] imgId[] [end]
 I/start   (  871): [TC:82779][TT:12786] [---------QML---------] [NQImageBase::setImage] imgId[] [begin]
 I/start   (  871): [TC:82779][TT:12787] [---------QML---------] [NQImageBase::setImage] imgId[] [end]
 I/start   (  871): [TC:82779][TT:12787] [---------QML---------] [NQImageBase::setImage] imgId[TEX_PNG_BUHIN_02_1_51] [begin]
 I/start   (  871): [TC:82779][TT:12787] [---------QML---------] [NQImageBase::setImage] imgId[TEX_PNG_BUHIN_02_1_51] [end]
-I/start   (  228): [TC:83030][TT:949] [Service] Before onAwake [nutshell.voice.voicerecognizer]
-I/start   (  220): [TC:83058][TT:138] [Service] After onAwake [nutshell.vehicle.meter]
-I/start   (  228): [TC:83031][TT:951] [nutshell.voice.voicerecognizer] nutshell.voice.voicerecognizer[onAwake]
-I/start   (  220): [TC:83140][TT:139] [Service] notify status ready [nutshell.vehicle.meter]
-I/start   (  146): [TC:83141][TT:20] [ServiceManager] ServiceStatusChanged [nutshell.vehicle.meter:3]
 I/start   (  871): [TC:83272][TT:12833] [---------QML---------] [NQGuiApplication::notify] [triggerUpdateEvent] [begin]
 I/start   (  871): [TC:83274][TT:12835] [---------QML---------] [NQGuiApplication::notify] [triggerUpdateEvent] [end]
 I/start   (  871): [TC:83274][TT:12835] [---------QML---------] [QGuiApplication::notify] [begin]
@@ -1914,7 +1111,6 @@ I/start   (  871): [TC:83306][TT:12843] [---------QML---------] [NQPngTexture::b
 I/start   (  871): [TC:83306][TT:12843] [---------QML---------] [NQPngTexture::bind] [begin]
 I/start   (  871): [TC:83306][TT:12843] [---------QML---------] [NQPngTexture::bind] rebound ok [end]
 I/start   (  871): [TC:83306][TT:12843] [---------QML---------] [NQPngTexture::bind] [begin]
-I/start   (  206): [TC:83334][TT:81] [NCDIAGService] NCDIAG_InitProcess::startServiceAndFileRelatedReq End
 I/start   (  871): [TC:83344][TT:12844] [---------QML---------] [NQPngTexture::bind] [end]
 I/start   (  871): [TC:83345][TT:12845] [---------QML---------] [NQPngTexture::bind] [begin]
 I/start   (  871): [TC:83345][TT:12845] [---------QML---------] [NQPngTexture::bind] rebound ok [end]
@@ -1925,38 +1121,12 @@ I/start   (  871): [TC:83348][TT:12846] [---------QML---------] [NQPngTexture::b
 I/start   (  871): [TC:83348][TT:12846] [---------QML---------] [NQPngTexture::bind] [begin]
 I/start   (  871): [TC:83348][TT:12846] [---------QML---------] [NQPngTexture::bind] rebound ok [end]
 I/start   (  871): [TC:83388][TT:12848] [---------QML---------] [QGuiApplication::notify] [end]
-I/start   (  230): [TC:83581][TT:178] [NCUpdateService] NCUpdateService::onAwake end
-I/start   (  230): [TC:83581][TT:178] [Service] After onAwake [nutshell.renewal.sysupdate]
-I/start   (  230): [TC:83662][TT:179] [Service] notify status ready [nutshell.renewal.sysupdate]
-I/start   (  146): [TC:83714][TT:21] [ServiceManager] ServiceStatusChanged [nutshell.renewal.sysupdate:3]
-I/start   (  228): [TC:83979][TT:1008] [Service] After onAwake [nutshell.voice.voicerecognizer]
-I/start   (  228): [TC:83982][TT:1] [VoiceRecog] [VoiceRecog]:Recieve onawake start
-I/start   (  228): [TC:84094][TT:1019] [Service] notify status ready [nutshell.voice.voicerecognizer]
 I/start   (  871): [TC:84095][TT:12923] [SysUI_INT] [closePLCation] [begin]
 I/start   (  871): [TC:84116][TT:12930] [---------QML---------] [NQViewBase::deactive] [begin]
 I/start   (  871): [TC:84117][TT:12931] [---------QML---------] [NQViewBase::deactive] [end]
-I/start   (  225): [TC:84142][TT:3] [appcontrol] [startQueryStartupMode]
-I/start   (  225): [TC:84142][TT:3] [AppControl] [startLastMode] sendQueryStartupMode cur process  [6]
-I/start   (  225): [TC:84147][TT:6] [AppControl] [startLastMode] sendQueryStartupMode error
-I/start   (  225): [TC:84147][TT:7] [AppControl] [startLastMode] sendQueryStartupMode cur process  [7]
-I/start   (  225): [TC:84147][TT:7] [AppControl] [startLastMode] sendQueryStartupMode error
-I/start   (  225): [TC:84147][TT:7] [AppControl] [startLastMode] sendQueryStartupMode cur process  [5]
-I/start   (  225): [TC:84147][TT:7] [AppControl] [startLastMode] sendQueryStartupMode error
-I/start   (  225): [TC:84147][TT:7] [AppControl] [startLastMode] sendQueryStartupMode cur process  [9]
-I/start   (  225): [TC:84147][TT:7] [AppControl] [startLastMode] sendQueryStartupMode error
-I/start   (  225): [TC:84147][TT:7] [AppControl] [startLastMode] sendQueryStartupMode cur process  [2]
-I/start   (  225): [TC:84148][TT:7] [AppControl] [startLastMode] sendQueryStartupMode error
-I/start   (  225): [TC:84148][TT:7] [AppControl] [startLastMode] sendQueryStartupMode cur process  [8]
-I/start   (  225): [TC:84149][TT:8] [AppControl] [startLastMode] sendQueryStartupMode cur process  [255]
-I/start   (  225): [TC:84149][TT:8] [AppControl] [startLastMode] sendQueryStartupMode error
-I/start   (  225): [TC:84149][TT:8] [AppControl] [startLastMode] queryStartupModeFinished 
-I/start   (  205): [TC:84172][TT:421] [Service] After onAwake [nutshell.media.tsl]
-I/start   (  205): [TC:84172][TT:422] [Service] notify status ready [nutshell.media.tsl]
-I/start   (  146): [TC:84175][TT:23] [ServiceManager] ServiceStatusChanged [nutshell.voice.voicerecognizer:3]
 I/start   (  871): [TC:84178][TT:12934] [---------QML---------] [NQViewBase::deactive] [begin]
 I/start   (  871): [TC:84178][TT:12934] [---------QML---------] [NQViewBase::deactive] [end]
 I/start   (  871): [TC:84181][TT:12937] [SysUI_INT] [closePLCation] [end]
-I/start   (  146): [TC:84248][TT:21] [ServiceManager] ServiceStatusChanged [nutshell.media.tsl:3]
 I/start   (  871): [TC:84304][TT:12956] [---------QML---------] [NQGuiApplication::notify] [triggerUpdateEvent] [begin]
 I/start   (  871): [TC:84307][TT:12958] [---------QML---------] [NQGuiApplication::notify] [triggerUpdateEvent] [end]
 I/start   (  871): [TC:84307][TT:12958] [---------QML---------] [QGuiApplication::notify] [begin]
@@ -2004,41 +1174,26 @@ I/start   (  871): [TC:84505][TT:12986] [StartMenu] [StartMenu::checkAppMenu()] 
 I/start   (  871): [TC:84505][TT:12986] [StartMenu] [StartMenu::checkAppMenu()] [isRegion_EU()] [end]
 I/start   (  871): [TC:84505][TT:12986] [StartMenu] [StartMenu::checkAppMenu()] [end]
 I/start   (  871): [TC:84579][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [check tsl icon index begin]
-I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [check tsl icon index end]
 I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [get product country (getUICFunc isSupportTsl) begin]
-I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [get product country (getUICFunc isSupportTsl) end]
 I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [get system info tsl status begin]
-I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [get system info tsl status end]
 I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [get tsl connect type begin]
-I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [get tsl connect type end]
 I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [get tsl app list transfer type begin]
-I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [get tsl app list transfer type end]
 I/start   (  871): [TC:84580][TT:12995] [statusbar] [NQStatusBar::checkTSL()] [show tsl mark begin]
 I/start   (  871): [TC:84588][TT:13003] [---------QML---------] [NQImageBase::setImage] imgId[TEX_PNG_BUHIN_02_1_51] [begin]
-I/start   (  871): [TC:84588][TT:13003] [---------QML---------] [NQImageBase::setImage] imgId[TEX_PNG_BUHIN_02_1_51] url is the same as before [en
 I/start   (  871): [TC:84588][TT:13003] [---------QML---------] [NQImageBase::setImage] imgId[] [begin]
 I/start   (  871): [TC:84588][TT:13003] [---------QML---------] [NQImageBase::setImage] imgId[] url is the same as before [end]
 I/start   (  871): [TC:84588][TT:13003] [---------QML---------] [NQImageBase::setImage] imgId[] [begin]
 I/start   (  871): [TC:84588][TT:13003] [---------QML---------] [NQImageBase::setImage] imgId[] url is the same as before [end]
-I/start   (  871): [TC:84589][TT:13003] [statusbar] [NQStatusBar::checkTSL()] [delete tsl button update position]
 I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [check tsl icon index begin]
-I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [check tsl icon index end]
 I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [get product country (getUICFunc isSupportTsl) begin]
-I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [get product country (getUICFunc isSupportTsl) end]
 I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [get system info tsl status begin]
-I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [get system info tsl status end]
 I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [get tsl connect type begin]
-I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [get tsl connect type end]
 I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [get tsl app list transfer type begin]
-I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [get tsl app list transfer type end]
 I/start   (  871): [TC:84619][TT:13010] [statusbar] [NQStatusBar::checkTSL()] [show tsl mark begin]
 I/start   (  871): [TC:84620][TT:13010] [---------QML---------] [NQImageBase::setImage] imgId[TEX_PNG_BUHIN_02_1_51] [begin]
-I/start   (  871): [TC:84620][TT:13011] [---------QML---------] [NQImageBase::setImage] imgId[TEX_PNG_BUHIN_02_1_51] url is the same as before [en
 I/start   (  871): [TC:84620][TT:13011] [---------QML---------] [NQImageBase::setImage] imgId[] [begin]
 I/start   (  871): [TC:84620][TT:13011] [---------QML---------] [NQImageBase::setImage] imgId[] url is the same as before [end]
 I/start   (  871): [TC:84621][TT:13011] [---------QML---------] [NQImageBase::setImage] imgId[] [begin]
 I/start   (  871): [TC:84621][TT:13011] [---------QML---------] [NQImageBase::setImage] imgId[] url is the same as before [end]
-I/start   (  871): [TC:84622][TT:13012] [statusbar] [NQStatusBar::checkTSL()] [delete tsl button update position]
-
-root@nutshell:/ # logcat -b radio &[   79.901755] load finished.
-
+                                                                                                                                                                                                             ?
+©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤jowu@jowu-pset:/drives/e/workspace/script/python$
