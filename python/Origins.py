@@ -27,10 +27,11 @@ s_enmyeName = \
     'fungusRider_small', \
     'fungusRider', \
     'gloomy', \
-    'gnoll_blighter', \
-    'gnoll_burner', \
-    'gnoll_gnawer', \
-    'gnoll_reaver', \
+    'gnoll', \
+    # 'gnoll_blighter', \
+    # 'gnoll_burner', \
+    # 'gnoll_gnawer', \
+    # 'gnoll_reaver', \
     'gollem', \
     'grim_devourers', \
     'harraser', \
@@ -60,6 +61,7 @@ s_enmyeName = \
     'twilight_evoker', \
     'twilight_heretic', \
     'webspitterSpider', \
+    'babyAshbite', \
 ]
 
 s_towerName = \
@@ -69,16 +71,20 @@ s_towerName = \
     'artillery_thrower', \
     'artillery_tree', \
     'mage', \
-    'forestKeeper', \
+    'barrack', \
+    'forest', \
     'bladeSinger' \
+    'stun_big', \
+    'stun_small' \
 ]
 
 s_allyName = \
 [
+    'roadRunner',
+    'pixie', \
     'catapult', \
     'ewok', \
     'reinforce' \
-    ''
 ]
 
 s_heroName = \
@@ -102,6 +108,17 @@ s_heroName = \
     'veznan', \
     'wilburg', \
     'malik' \
+]
+
+s_bossName = [
+    'hee-haw', \
+    'malicia', \
+    'bajnimen', \
+    'ainyl', \
+    'boss_godieth', \
+    'bossHiena', \
+    'drow_queen', \
+    'spiderQueen' \
 ]
 
 class  XmlFilter:
@@ -139,6 +156,24 @@ class PListReader:
     def __init__(self):
         print('--PListFilter--')
 
+    def checkType(self, name):
+        for enemy in s_enmyeName:
+            if ( enemy in name):
+                return "ENEMY"
+        for hero in s_heroName:
+            if (hero in name):
+                return "HERO"
+        for tower in s_towerName:
+            if (tower in name):
+                return "TOWER"
+        for ally in s_allyName:
+            if (ally in name):
+                return "ALLY"
+        for boss in s_bossName:
+            if (boss in name):
+                return "BOSS"
+        return "COMMON"
+
     def readAnimationPlists(self, path):
         for f in os.listdir(path):
             formatName = f[f.rfind('.') + 1:]
@@ -150,12 +185,12 @@ class PListReader:
             out = readPlist(name)
             actions = out['animations']
             for action in actions:
-                print (action)
+
                 #print ("formIndex %d toIndex %d prefix %s" %(action['fromIndex'], action['toIndex'], action['prefix']))
-
-
-
-
+                # is enemy ?
+                ret = self.checkType(action)
+                print action + "=" + ret
+                # print ("%s is  %s", %(action ret))
 
 if __name__ == '__main__':
     path = "E:\Origins"
@@ -165,4 +200,4 @@ if __name__ == '__main__':
 
     # test plist reader
     pr = PListReader();
-    # pr.readAnimationPlists(path)
+    pr.readAnimationPlists(path)
