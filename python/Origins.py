@@ -175,6 +175,7 @@ class PListReader:
         return "COMMON"
 
     def readAnimationPlists(self, path):
+        animations = []
         for f in os.listdir(path):
             formatName = f[f.rfind('.') + 1:]
             if ('animation' not in f):
@@ -185,12 +186,55 @@ class PListReader:
             out = readPlist(name)
             actions = out['animations']
             for action in actions:
-
                 #print ("formIndex %d toIndex %d prefix %s" %(action['fromIndex'], action['toIndex'], action['prefix']))
                 # is enemy ?
                 ret = self.checkType(action)
                 print action + "=" + ret
                 # print ("%s is  %s", %(action ret))
+            animations.append(actions)
+        return animations
+
+    def getActionsWithGivenFolder(self, path):
+        if not os.path.exists(path):
+            print ("path not exists !!!!")
+            return
+        reg = "_[0-9]{4}.png";
+        actions = []
+        for f in os.listdir(path):
+            sourceF = os.path.join(path, f)
+            if os.path.isfile(sourceF) and re.search(reg, f):
+                #print sourceF[0 : sourceF.rfind('_')]
+                actions.append(f[0 : f.rfind('_')])
+        return set(actions)
+
+    def scanFolderForActions(self, path, animations):
+        targetPath = "C:\Animations"
+        for f in os.listdir(path):
+            sourceF = os.path.join(path, f)
+            if os.path.isdir(sourceF):
+                acts = self.getActionsWithGivenFolder(sourceF)
+                for act in acts:
+                    print act
+                    targetFolder = os.path.join(targetPath, f)
+                    if not os.path.exists(targetFolder):
+                        os.mkdir(targetFolder)
+                    if act in animations:
+                        # move all png to animations floder
+                        cmd = 'mv'
+                        cmd += act
+                        cmd += "* "
+                        cmd += targetFolder
+                        print cmd
+                    #print act
+            print "=============================================" + path
+
+
+
+
+    def detachAnimationFromRes(self):
+        print('detachAnimationFromRes')
+
+
 
 if __name__ == '__main__':
     path = "E:\Origins"
@@ -200,4 +244,5 @@ if __name__ == '__main__':
 
     # test plist reader
     pr = PListReader();
-    pr.readAnimationPlists(path)
+    animations = pr.readAnimationPlists(path)
+    pr.scanFolderForActions("C:\Images", animations)
