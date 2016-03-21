@@ -1,3 +1,4 @@
+#!/usr/bin/python
 __author__ = 'jowu'
 
 # 0-3 versionId
@@ -183,15 +184,15 @@ class PListReader:
             if ('plist' != formatName):
                 continue;
             name = os.path.join(path, f)
-            out = readPlist(name)
-            actions = out['animations']
-            for action in actions:
+            plistAnimation = readPlist(name)
+            pAnimations = plistAnimation['animations']
+            for anim in pAnimations:
+                animations.append(anim)
                 #print ("formIndex %d toIndex %d prefix %s" %(action['fromIndex'], action['toIndex'], action['prefix']))
                 # is enemy ?
-                ret = self.checkType(action)
-                print action + "=" + ret
+                ret = self.checkType(anim)
+                print anim + "=" + ret
                 # print ("%s is  %s", %(action ret))
-            animations.append(actions)
         return animations
 
     def getActionsWithGivenFolder(self, path):
@@ -207,8 +208,7 @@ class PListReader:
                 actions.append(f[0 : f.rfind('_')])
         return set(actions)
 
-    def scanFolderForActions(self, path, animations):
-        targetPath = "C:\Animations"
+    def scanFolderForActions(self, path, animations, targetPath):
         for f in os.listdir(path):
             sourceF = os.path.join(path, f)
             if os.path.isdir(sourceF):
@@ -220,16 +220,15 @@ class PListReader:
                         os.mkdir(targetFolder)
                     if act in animations:
                         # move all png to animations floder
-                        cmd = 'mv'
-                        cmd += act
+                        cmd = 'cp '
+                        cmd += sourceF + "/"
+                        cmd += act;
                         cmd += "* "
                         cmd += targetFolder
-                        print cmd
+                        print "cmd is :" + cmd
+                        os.system(cmd)
                     #print act
-            print "=============================================" + path
-
-
-
+            print "=============================================" + path + "====" + f  
 
     def detachAnimationFromRes(self):
         print('detachAnimationFromRes')
@@ -237,12 +236,20 @@ class PListReader:
 
 
 if __name__ == '__main__':
-    path = "E:\Origins"
+    #imagepath = "E:\Origins"
+    #targetPath = "C:\Animations"
+    tdRes = "/Users/jowu/workspace/TowerDefense/Resources"
+    imagepath = "/Users/jowu/Documents/Images"
+    targetPath = "/Users/jowu/Documents/Animations"
     # test xml filter
     # xf = XmlFilter();
     # xf.extractEnemyNameFromWaves(path)
 
     # test plist reader
     pr = PListReader();
-    animations = pr.readAnimationPlists(path)
-    pr.scanFolderForActions("C:\Images", animations)
+    animations = pr.readAnimationPlists(tdRes)
+    pr.scanFolderForActions(imagepath, animations, targetPath)
+
+
+
+
