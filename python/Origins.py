@@ -175,6 +175,26 @@ class PListReader:
                 return "BOSS"
         return "COMMON"
 
+    def extractPrefix(self, path):
+        prefixs = []
+        for f in os.listdir(path):
+            formatName = f[f.rfind('.') + 1:]
+            if ('animation' not in f):
+                continue;
+            if ('plist' != formatName):
+                continue;
+            name = os.path.join(path, f)
+            plistAnimation = readPlist(name)
+            regPrefix='\'prefix\': \'([a-zA-Z-_0-9]+)\''
+            reobj = re.compile(regPrefix)
+            out = reobj.findall(str(plistAnimation))
+            
+            unsetOut = set(out)
+            for prefix in unsetOut:
+                prefixs.append(prefix)
+        return set(prefixs)
+
+
     def readAnimationPlists(self, path):
         animations = []
         for f in os.listdir(path):
@@ -185,14 +205,22 @@ class PListReader:
                 continue;
             name = os.path.join(path, f)
             plistAnimation = readPlist(name)
-            pAnimations = plistAnimation['animations']
-            for anim in pAnimations:
-                animations.append(anim)
-                #print ("formIndex %d toIndex %d prefix %s" %(action['fromIndex'], action['toIndex'], action['prefix']))
-                # is enemy ?
-                ret = self.checkType(anim)
-                print anim + "=" + ret
-                # print ("%s is  %s", %(action ret))
+            # pAnimations = plistAnimation['animations']
+            # print pAnimations
+            regPrefix='\'prefix\': \'([a-zA-Z-_0-9]+)\''
+            reobj = re.compile(regPrefix)
+            out = reobj.findall(str(plistAnimation))
+            
+            unsetOut = set(out)
+            print unsetOut
+            # return []
+            # for anim in pAnimations:
+            #     animations.append(anim)
+            #     #print ("formIndex %d toIndex %d prefix %s" %(action['fromIndex'], action['toIndex'], action['prefix']))
+            #     # is enemy ?
+            #     ret = self.checkType(anim)
+            #     print anim + "=" + str(len(anim))
+            #     # print ("%s is  %s", %(action ret))
         return animations
 
     def getActionsWithGivenFolder(self, path):
@@ -208,7 +236,8 @@ class PListReader:
                 actions.append(f[0 : f.rfind('_')])
         return set(actions)
 
-    def scanFolderForActions(self, path, animations, targetPath):
+    def splitsImageFormAnimation(self, tdRes, path, targetPath):
+        prefixs = pr.extractPrefix(tdRes)
         for f in os.listdir(path):
             sourceF = os.path.join(path, f)
             if os.path.isdir(sourceF):
@@ -218,15 +247,26 @@ class PListReader:
                     targetFolder = os.path.join(targetPath, f)
                     if not os.path.exists(targetFolder):
                         os.mkdir(targetFolder)
-                    if act in animations:
+
+                    if act in prefixs:
                         # move all png to animations floder
-                        cmd = 'cp '
+                        cmd = 'mv '
                         cmd += sourceF + "/"
                         cmd += act;
                         cmd += "* "
                         cmd += targetFolder
                         print "cmd is :" + cmd
                         os.system(cmd)
+
+                    
+                    #     # move all png to animations floder
+                    #     cmd = 'cp '
+                    #     cmd += sourceF + "/"
+                    #     cmd += act;
+                    #     cmd += "* "
+                    #     cmd += targetFolder
+                    #     print "cmd is :" + cmd
+                        #os.system(cmd)
                     #print act
             print "=============================================" + path + "====" + f  
 
@@ -247,8 +287,7 @@ if __name__ == '__main__':
 
     # test plist reader
     pr = PListReader();
-    animations = pr.readAnimationPlists(tdRes)
-    pr.scanFolderForActions(imagepath, animations, targetPath)
+    pr.splitsImageFormAnimation(tdRes, imagepath, targetPath)
 
 
 
