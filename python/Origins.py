@@ -194,9 +194,8 @@ class PListReader:
                 prefixs.append(prefix)
         return set(prefixs)
 
+    def extractAnimationID(self, path):
 
-    def readAnimationPlists(self, path):
-        animations = []
         for f in os.listdir(path):
             formatName = f[f.rfind('.') + 1:]
             if ('animation' not in f):
@@ -205,23 +204,17 @@ class PListReader:
                 continue;
             name = os.path.join(path, f)
             plistAnimation = readPlist(name)
-            # pAnimations = plistAnimation['animations']
-            # print pAnimations
-            regPrefix='\'prefix\': \'([a-zA-Z-_0-9]+)\''
-            reobj = re.compile(regPrefix)
-            out = reobj.findall(str(plistAnimation))
-            
-            unsetOut = set(out)
-            print unsetOut
-            # return []
-            # for anim in pAnimations:
-            #     animations.append(anim)
-            #     #print ("formIndex %d toIndex %d prefix %s" %(action['fromIndex'], action['toIndex'], action['prefix']))
-            #     # is enemy ?
-            #     ret = self.checkType(anim)
-            #     print anim + "=" + str(len(anim))
-            #     # print ("%s is  %s", %(action ret))
-        return animations
+            animationDict = plistAnimation['animations']
+
+            for (animation, info) in animationDict.items():
+                print animation
+                print info
+
+                #print ("formIndex %d toIndex %d prefix %s" %(anim['fromIndex'], anim['toIndex'], anim['prefix']))
+                # is enemy ?
+                # ret = self.checkType(anim)
+                # print anim + "=" + ret
+                # print ("%s is  %s", %(action ret))
 
     def getActionsWithGivenFolder(self, path):
         if not os.path.exists(path):
@@ -285,9 +278,12 @@ if __name__ == '__main__':
     # xf = XmlFilter();
     # xf.extractEnemyNameFromWaves(path)
 
-    # test plist reader
+    # plist reader
     pr = PListReader();
-    pr.splitsImageFormAnimation(tdRes, imagepath, targetPath)
+    # splite animation
+    #pr.splitsImageFormAnimation(tdRes, imagepath, targetPath)
+    # extract id
+    pr.extractAnimationID(tdRes)
 
 
 
