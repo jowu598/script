@@ -7,6 +7,7 @@ __author__ = 'jowu'
 # 0-15 actionId
 import sys, getopt, os,  os.path,  re,  codecs
 from xml.dom import minidom
+from xml.dom.minidom import Document
 from xml.dom.minidom import parse
 import xml.dom.minidom
 from biplist import *
@@ -28,11 +29,10 @@ s_enmyeName = \
     'fungusRider_small', \
     'fungusRider', \
     'gloomy', \
-    'gnoll', \
-    # 'gnoll_blighter', \
-    # 'gnoll_burner', \
-    # 'gnoll_gnawer', \
-    # 'gnoll_reaver', \
+    'gnoll_blighter', \
+    'gnoll_burner', \
+    'gnoll_gnawer', \
+    'gnoll_reaver', \
     'gollem', \
     'grim_devourers', \
     'harraser', \
@@ -62,7 +62,6 @@ s_enmyeName = \
     'twilight_evoker', \
     'twilight_heretic', \
     'webspitterSpider', \
-    'babyAshbite', \
 ]
 
 s_towerName = \
@@ -83,9 +82,27 @@ s_allyName = \
 [
     'roadRunner',
     'pixie', \
-    'catapult', \
+    'mercenary_draw', \
     'ewok', \
-    'reinforce' \
+    'reinforce', \
+    'rabbit', \
+    # 'bladeSinger', \
+    # 'forestKeeper', \
+    # 'barrack_soldier', \
+    # 'artillery_henge_bear', \
+    'babyAshbite', \
+    'reinforce', \
+    # 'reinforce_A1', \
+    # 'reinforce_A2', \
+    # 'reinforce_A3', \
+    # 'reinforce_B0', \
+    # 'reinforce_B1', \
+    # 'reinforce_B2', \
+    # 'reinforce_B3', \
+    # 'reinforce_C0', \
+    # 'reinforce_C1', \
+    # 'reinforce_C2', \
+    # 'reinforce_C3', \
 ]
 
 s_heroName = \
@@ -120,6 +137,8 @@ s_bossName = [
     'bossHiena', \
     'drow_queen', \
     'spiderQueen' \
+    'boss_godieth' \
+    'theBeheader' \
 ]
 
 class  XmlFilter:
@@ -152,6 +171,12 @@ class  XmlFilter:
             self.addEnemy(file)
         for name in self.enemyNames:
             print name
+
+
+    def generateAnimationId(self):
+        doc = minidom.parse('animation.xml')
+        for child in doc.childNodes:
+            print child
 
 class PListReader:
     def __init__(self):
@@ -195,7 +220,9 @@ class PListReader:
         return set(prefixs)
 
     def extractAnimationID(self, path):
-
+        doc = Document()
+        xmlRoot = doc.createElement('animations')
+        doc.appendChild(xmlRoot)
         for f in os.listdir(path):
             formatName = f[f.rfind('.') + 1:]
             if ('animation' not in f):
@@ -207,14 +234,45 @@ class PListReader:
             animationDict = plistAnimation['animations']
 
             for (animation, info) in animationDict.items():
-                print animation
+                print "animation name: " + animation
                 print info
+                animationNode = doc.createElement('animation')
+                descriptNode = doc.createElement('descript')
+                prefixNode = doc.createElement('prefix')
+                toIndexNode = doc.createElement('toIndex')
+                fromIndexNode = doc.createElement('fromIndex')
+                catagoryNode = doc.createElement('catagory')
 
-                #print ("formIndex %d toIndex %d prefix %s" %(anim['fromIndex'], anim['toIndex'], anim['prefix']))
-                # is enemy ?
-                # ret = self.checkType(anim)
-                # print anim + "=" + ret
-                # print ("%s is  %s", %(action ret))
+                descript = doc.createTextNode(animation)
+                prefix = doc.createTextNode(info['prefix'])
+                catagory = doc.createTextNode(self.checkType(animation))
+                if (info.has_key('fromIndex') and info.has_key('toIndex')):
+                    fromIndex = doc.createTextNode(str(info['fromIndex']))
+                    toIndex = doc.createTextNode(str(info['toIndex']))
+                    print "prefix: " + info['prefix'] + ", fromIndex: " + str(info['fromIndex']) + ", toIndex: " + str(info['toIndex'])
+                else:
+                    fromIndex = doc.createTextNode('-1')
+                    toIndex = doc.createTextNode('-1')
+                    print "=============================================================================="
+
+                animationNode.appendChild(prefixNode)
+                animationNode.appendChild(descriptNode)
+                animationNode.appendChild(toIndexNode)
+                animationNode.appendChild(fromIndexNode)
+                animationNode.appendChild(catagoryNode)
+
+                prefixNode.appendChild(prefix)
+                descriptNode.appendChild(descript)
+                toIndexNode.appendChild(toIndex)
+                fromIndexNode.appendChild(fromIndex)
+                catagoryNode.appendChild(catagory)
+
+                xmlRoot.appendChild(animationNode)
+
+            f = open('animation.xml', 'w')
+            f.write(doc.toprettyxml(indent= ''))
+            f.close()
+
 
     def getActionsWithGivenFolder(self, path):
         if not os.path.exists(path):
@@ -268,6 +326,7 @@ class PListReader:
 
 
 
+
 if __name__ == '__main__':
     #imagepath = "E:\Origins"
     #targetPath = "C:\Animations"
@@ -275,7 +334,7 @@ if __name__ == '__main__':
     imagepath = "/Users/jowu/Documents/Images"
     targetPath = "/Users/jowu/Documents/Animations"
     # test xml filter
-    # xf = XmlFilter();
+    xf = XmlFilter();
     # xf.extractEnemyNameFromWaves(path)
 
     # plist reader
@@ -283,7 +342,9 @@ if __name__ == '__main__':
     # splite animation
     #pr.splitsImageFormAnimation(tdRes, imagepath, targetPath)
     # extract id
-    pr.extractAnimationID(tdRes)
+    #pr.extractAnimationID(tdRes)
+
+    xf.generateAnimationId();
 
 
 
